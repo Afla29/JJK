@@ -1,0 +1,24 @@
+{
+  "id": "chain_of_thousand_miles",
+  "name": "Chain of Thousand Miles",
+  "type": "Chain",
+  "rarity": "special_grade",
+  "weight": 6,
+  "requirements": {
+    "min_ce_add": 0,
+    "min_strength_value": 0,
+    "note": null
+  },
+  "abilities": [
+    {
+      "name": "Infinite Extension",
+      "category": "utility",
+      "description": "Endless reach for binding.",
+      "mechanics": {
+        "damage_type": "Physical",
+        "ce_cost_mult": 1.1,
+        "special_effect": "Infinite length when tip is hidden. Pairs with other tools."
+      }
+    }
+  ]
+}

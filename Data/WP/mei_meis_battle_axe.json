@@ -1,0 +1,24 @@
+{
+  "id": "mei_meis_battle_axe",
+  "name": "Mei Mei's Battle-Axe",
+  "type": "Axe",
+  "rarity": "special_grade",
+  "weight": 9,
+  "requirements": {
+    "min_ce_add": 500,
+    "min_strength_value": 8,
+    "note": "Requires high strength and CE."
+  },
+  "abilities": [
+    {
+      "name": "Heavy Cleave",
+      "category": "offense",
+      "description": "Devastating wide swings with massive impact.",
+      "mechanics": {
+        "damage_type": "Physical",
+        "ce_cost_mult": 1.4,
+        "special_effect": "Best weapon for raw physical damage output."
+      }
+    }
+  ]
+}

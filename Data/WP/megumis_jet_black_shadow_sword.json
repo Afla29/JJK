@@ -1,0 +1,24 @@
+{
+  "id": "megumis_jet_black_shadow_sword",
+  "name": "Megumi's Jet-Black Shadow Sword",
+  "type": "Sword",
+  "rarity": "special_grade",
+  "weight": 15,
+  "requirements": {
+    "min_ce_add": 0,
+    "min_strength_value": 0,
+    "note": null
+  },
+  "abilities": [
+    {
+      "name": "Shadow Storage",
+      "category": "utility",
+      "description": "Store in shadows for instant deployment.",
+      "mechanics": {
+        "damage_type": "Physical",
+        "ce_cost_mult": 1.0,
+        "special_effect": "Synergizes with Ten Shadows. Pull from shadow instantly."
+      }
+    }
+  ]
+}

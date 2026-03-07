@@ -1,0 +1,24 @@
+{
+  "id": "inverted_spear_of_heaven",
+  "name": "Inverted Spear of Heaven",
+  "type": "Dagger",
+  "rarity": "special_grade",
+  "weight": 3,
+  "requirements": {
+    "min_ce_add": 0,
+    "min_strength_value": 0,
+    "note": null
+  },
+  "abilities": [
+    {
+      "name": "Nullify",
+      "category": "utility",
+      "description": "Deactivates any cursed technique on touch.",
+      "mechanics": {
+        "damage_type": null,
+        "ce_cost_mult": 1.0,
+        "special_effect": "Instantly shuts down active cursed techniques."
+      }
+    }
+  ]
+}

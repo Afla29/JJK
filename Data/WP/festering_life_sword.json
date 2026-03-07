@@ -1,0 +1,24 @@
+{
+  "id": "festering_life_sword",
+  "name": "Festering Life Sword",
+  "type": "Butcher Blade",
+  "rarity": "special_grade",
+  "weight": 5,
+  "requirements": {
+    "min_ce_add": 0,
+    "min_strength_value": 0,
+    "note": null
+  },
+  "abilities": [
+    {
+      "name": "Biological Rot",
+      "category": "offense",
+      "description": "Life-corrupting strike.",
+      "mechanics": {
+        "damage_type": "Biological",
+        "ce_cost_mult": 1.3,
+        "special_effect": "Inflicts rot and parasites. Ongoing damage per round."
+      }
+    }
+  ]
+}

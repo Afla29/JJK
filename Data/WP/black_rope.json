@@ -1,0 +1,24 @@
+{
+  "id": "black_rope",
+  "name": "Black Rope",
+  "type": "Rope",
+  "rarity": "special_grade",
+  "weight": 7,
+  "requirements": {
+    "min_ce_add": 0,
+    "min_strength_value": 0,
+    "note": null
+  },
+  "abilities": [
+    {
+      "name": "Technique Nullify",
+      "category": "utility",
+      "description": "Binding seal for curses.",
+      "mechanics": {
+        "damage_type": null,
+        "ce_cost_mult": 1.0,
+        "special_effect": "Nullifies techniques on bind. Single use then consumed."
+      }
+    }
+  ]
+}

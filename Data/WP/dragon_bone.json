@@ -1,0 +1,24 @@
+{
+  "id": "dragon_bone",
+  "name": "Dragon-Bone",
+  "type": "Sword",
+  "rarity": "special_grade",
+  "weight": 8,
+  "requirements": {
+    "min_ce_add": 0,
+    "min_strength_value": 0,
+    "note": null
+  },
+  "abilities": [
+    {
+      "name": "Force Accumulation",
+      "category": "offense",
+      "description": "Builds power for explosive release.",
+      "mechanics": {
+        "damage_type": "Physical",
+        "ce_cost_mult": 1.5,
+        "special_effect": "Stores force and heat, releases as bonus damage."
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "harutas_hand_sword",
+  "name": "Haruta's Hand-Sword",
+  "type": "Miracle Sword",
+  "rarity": "special_grade",
+  "weight": 8,
+  "requirements": {
+    "min_ce_add": 0,
+    "min_strength_value": 0,
+    "note": null
+  },
+  "abilities": [
+    {
+      "name": "Autonomous Grip",
+      "category": "utility",
+      "description": "Sentient blade that acts on its own.",
+      "mechanics": {
+        "damage_type": "Physical",
+        "ce_cost_mult": 1.0,
+        "special_effect": "Grip moves autonomously to parry and grab."
+      }
+    }
+  ]
+}

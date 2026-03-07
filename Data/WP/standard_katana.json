@@ -1,0 +1,24 @@
+{
+  "id": "standard_katana",
+  "name": "Standard Katana",
+  "type": "Katana",
+  "rarity": "common",
+  "weight": 40,
+  "requirements": {
+    "min_ce_add": 0,
+    "min_strength_value": 0,
+    "note": null
+  },
+  "abilities": [
+    {
+      "name": "CE Reinforced Slash",
+      "category": "offense",
+      "description": "Basic slash reinforced with CE.",
+      "mechanics": {
+        "damage_type": "Physical",
+        "ce_cost_mult": 1.0,
+        "special_effect": "Standard cutting power enhanced by CE infusion."
+      }
+    }
+  ]
+}

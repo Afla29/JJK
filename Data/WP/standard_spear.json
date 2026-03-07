@@ -1,0 +1,24 @@
+{
+  "id": "standard_spear",
+  "name": "Standard Spear",
+  "type": "Spear",
+  "rarity": "common",
+  "weight": 30,
+  "requirements": {
+    "min_ce_add": 0,
+    "min_strength_value": 0,
+    "note": null
+  },
+  "abilities": [
+    {
+      "name": "Piercing Thrust",
+      "category": "offense",
+      "description": "Extended reach for safe poking.",
+      "mechanics": {
+        "damage_type": "Physical",
+        "ce_cost_mult": 1.0,
+        "special_effect": "Range advantage over close-quarters weapons."
+      }
+    }
+  ]
+}

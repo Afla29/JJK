@@ -1,0 +1,24 @@
+{
+  "id": "nanamis_blunt_sword",
+  "name": "Nanami's Blunt Sword",
+  "type": "Blunt Sword",
+  "rarity": "special_grade",
+  "weight": 9,
+  "requirements": {
+    "min_ce_add": 0,
+    "min_strength_value": 0,
+    "note": null
+  },
+  "abilities": [
+    {
+      "name": "7:3 Critical",
+      "category": "offense",
+      "description": "Massive crit at the 7:3 ratio weak point.",
+      "mechanics": {
+        "damage_type": "Physical",
+        "ce_cost_mult": 1.0,
+        "special_effect": "Devastating damage at the weak point. Works with Overtime."
+      }
+    }
+  ]
+}

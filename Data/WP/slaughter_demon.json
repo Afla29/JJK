@@ -1,0 +1,24 @@
+{
+  "id": "slaughter_demon",
+  "name": "Slaughter Demon",
+  "type": "Combat Knife",
+  "rarity": "common",
+  "weight": 10,
+  "requirements": {
+    "min_ce_add": 0,
+    "min_strength_value": 0,
+    "note": null
+  },
+  "abilities": [
+    {
+      "name": "Close-Quarters Slash",
+      "category": "offense",
+      "description": "Compact blade for brutal combos.",
+      "mechanics": {
+        "damage_type": "Physical",
+        "ce_cost_mult": 1.0,
+        "special_effect": "High maneuverability in tight spaces."
+      }
+    }
+  ]
+}

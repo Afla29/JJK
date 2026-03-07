@@ -1,0 +1,24 @@
+{
+  "id": "playful_cloud",
+  "name": "Playful Cloud",
+  "type": "Three-Section Staff",
+  "rarity": "special_grade",
+  "weight": 7,
+  "requirements": {
+    "min_ce_add": 0,
+    "min_strength_value": 7,
+    "note": "Requires exceptional physical strength."
+  },
+  "abilities": [
+    {
+      "name": "Pure Physical Barrage",
+      "category": "offense",
+      "description": "Unmatched physical devastation.",
+      "mechanics": {
+        "damage_type": "Physical",
+        "ce_cost_mult": 1.0,
+        "special_effect": "Pure physical. Scales 100% with strength value."
+      }
+    }
+  ]
+}
