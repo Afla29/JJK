@@ -1,0 +1,139 @@
+{
+  "id": "ten_shadows",
+  "name": "Ten Shadows Technique (Tokusa no Kage B\u014djutsu)",
+  "type": "Innate Technique",
+  "rarity": "special_grade",
+  "weight": 2,
+  "requirements": {
+    "required_identity": null,
+    "required_clan": "zenin",
+    "required_trait": null,
+    "min_ce_add": 600,
+    "note": "Inherited from Zenin bloodline. Summons shikigami via shadows."
+  },
+  "abilities": [
+    {
+      "name": "Divine Dogs",
+      "category": "shikigami",
+      "description": "Twin wolf shikigami for tracking and combat.",
+      "mechanics": {
+        "damage_type": "Physical",
+        "ce_cost": 50,
+        "ce_cost_mult": 1.0,
+        "stat_scaling": "ct_mastery",
+        "special_effect": "High-speed pursuit. If one falls, unlocks Divine Dog: Totality."
+      }
+    },
+    {
+      "name": "Divine Dog: Totality",
+      "category": "shikigami",
+      "description": "Fused ultimate wolf after one Divine Dog is defeated.",
+      "mechanics": {
+        "damage_type": "Physical",
+        "ce_cost": 120,
+        "ce_cost_mult": 1.5,
+        "stat_scaling": "ct_mastery",
+        "special_effect": "Massively enhanced speed, strength, and tracking. Replaces base form."
+      }
+    },
+    {
+      "name": "Nue",
+      "category": "shikigami",
+      "description": "Giant bird shikigami with electrokinetic wings.",
+      "mechanics": {
+        "damage_type": "Lightning",
+        "ce_cost": 80,
+        "ce_cost_mult": 1.2,
+        "stat_scaling": "speed",
+        "special_effect": "Aerial mobility, wing dives, electric shocks. Combines with Toad for extensions."
+      }
+    },
+    {
+      "name": "Great Serpent",
+      "category": "shikigami",
+      "description": "Massive snake for constriction and ambush.",
+      "mechanics": {
+        "damage_type": "Physical",
+        "ce_cost": 70,
+        "ce_cost_mult": 1.1,
+        "stat_scaling": "strength",
+        "special_effect": "Crushing coils and surprise strikes from shadows."
+      }
+    },
+    {
+      "name": "Toad",
+      "category": "shikigami",
+      "description": "Amphibious shikigami for support and grabs.",
+      "mechanics": {
+        "damage_type": "Physical",
+        "ce_cost": 40,
+        "ce_cost_mult": 1.0,
+        "stat_scaling": "ce_add",
+        "special_effect": "Tongue lashes for pulling enemies/allies. Combines with Nue for winged toad swarm."
+      }
+    },
+    {
+      "name": "Well's Unknown Abyss",
+      "category": "shikigami",
+      "description": "Extension summoning winged toads via Toad + Nue fusion.",
+      "mechanics": {
+        "damage_type": "Physical",
+        "ce_cost": 150,
+        "ce_cost_mult": 1.8,
+        "stat_scaling": "ce_add",
+        "special_effect": "Numerous winged toads for aerial support. Destroying them does NOT consume base Toad/Nue."
+      }
+    },
+    {
+      "name": "Max Elephant",
+      "category": "shikigami",
+      "description": "Colossal water-spewing elephant.",
+      "mechanics": {
+        "damage_type": "Water",
+        "ce_cost": 250,
+        "ce_cost_mult": 2.5,
+        "stat_scaling": "ct_mastery",
+        "special_effect": "Torrential water blasts for crowd control and flooding."
+      }
+    },
+    {
+      "name": "Rabbit Escape",
+      "category": "utility",
+      "description": "Swarm of rabbits for distraction or escape.",
+      "mechanics": {
+        "damage_type": null,
+        "ce_cost": 30,
+        "ce_cost_mult": 0.8,
+        "stat_scaling": null,
+        "special_effect": "Overwhelm foes with numbers. Ideal for fleeing or creating openings."
+      }
+    },
+    {
+      "name": "Mahoraga",
+      "category": "shikigami",
+      "description": "Ultimate shikigami general. Most powerful. Untameable by default.",
+      "mechanics": {
+        "damage_type": "Adaptive",
+        "ce_cost": 2000,
+        "ce_cost_mult": 5.0,
+        "stat_scaling": null,
+        "special_effect": "Untamed: paralyzes user, attacks everything indiscriminately. Tame via gameplay event (see events.json tame_mahoraga) \u2192 full control + adapts to any phenomenon."
+      }
+    }
+  ],
+  "domain_expansion": {
+    "name": "Chimera Shadow Garden",
+    "description": "Incomplete domain flooding area with shadows. Produces endless shikigami and user clones. No barrier \u2014 must overlap indoor space.",
+    "mechanics": {
+      "ce_cost": 1200,
+      "sure_hit": false,
+      "damage_mult": 1.2,
+      "special_effect": "120% Ten Shadows potential. Infinite shikigami clones. Indoor-only."
+    }
+  },
+  "anti_domain_compatible": [],
+  "barrier_techniques": [],
+  "buffs": {
+    "ce_efficiency_mult": 1.0
+  }
+}

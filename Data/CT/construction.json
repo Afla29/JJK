@@ -1,0 +1,82 @@
+{
+  "id": "construction",
+  "name": "Construction (K\u014dchiku Jutsushiki)",
+  "type": "Innate Technique",
+  "rarity": "special_grade",
+  "weight": 2,
+  "requirements": {
+    "required_identity": "reincarnation",
+    "required_clan": null,
+    "required_trait": null,
+    "min_ce_add": 0,
+    "note": "Heian-era. Yorozu vessel preferred. Creates any recognized substance."
+  },
+  "abilities": [
+    {
+      "name": "Insect Wings",
+      "category": "passive",
+      "description": "Two pairs of insect wings. Sustained flight.",
+      "mechanics": {
+        "damage_type": null,
+        "ce_cost": 50,
+        "ce_cost_mult": 0.8,
+        "stat_scaling": "ce_efficiency_mult",
+        "special_effect": "Always active. Aerial mobility at no extra activation cost."
+      }
+    },
+    {
+      "name": "Liquid Metal",
+      "category": "utility",
+      "description": "Semi-autonomous liquid metal shapeable into any form.",
+      "mechanics": {
+        "damage_type": "Physical",
+        "ce_cost": 180,
+        "ce_cost_mult": 1.6,
+        "stat_scaling": "ce_add",
+        "special_effect": "Shapes into blades, shields, projectiles. CE manipulates it independently."
+      }
+    },
+    {
+      "name": "Insect Armor",
+      "category": "defense",
+      "description": "Flesh armor mimicking insect carapace.",
+      "mechanics": {
+        "damage_type": null,
+        "ce_cost": 250,
+        "ce_cost_mult": 1.4,
+        "stat_scaling": "ce_add",
+        "special_effect": "Massive boost to strength, speed, durability for close combat."
+      }
+    },
+    {
+      "name": "True Sphere",
+      "category": "offense",
+      "description": "Perfect sphere that generates infinite pressure.",
+      "mechanics": {
+        "damage_type": "Crushing",
+        "ce_cost": 500,
+        "ce_cost_mult": 3.0,
+        "stat_scaling": "ce_add",
+        "special_effect": "No contact area. Crushes via infinite pressure. Sure-hit inside domain."
+      }
+    }
+  ],
+  "domain_expansion": {
+    "name": "Threefold Affliction (Shikkushikku Shikku)",
+    "description": "Blank space with oversized insect brain structures. Instant destruction of anything caught.",
+    "mechanics": {
+      "ce_cost": 1600,
+      "sure_hit": true,
+      "damage_mult": 1.5,
+      "special_effect": "Willed destruction of anything inside. Organic horror aesthetic."
+    }
+  },
+  "anti_domain_compatible": [
+    "simple_domain",
+    "domain_amplification"
+  ],
+  "barrier_techniques": [],
+  "buffs": {
+    "ce_efficiency_mult": 1.3
+  }
+}

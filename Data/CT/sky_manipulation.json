@@ -1,0 +1,59 @@
+{
+  "id": "sky_manipulation",
+  "name": "Sky Manipulation (Sora S\u014djutsu)",
+  "type": "Innate Technique",
+  "rarity": "special_grade",
+  "weight": 1,
+  "requirements": {
+    "required_identity": "reincarnation",
+    "required_clan": null,
+    "required_trait": null,
+    "min_ce_add": 800,
+    "note": "Heian-era. Takako Uro vessel preferred. Treats sky as a tangible surface."
+  },
+  "abilities": [
+    {
+      "name": "Sky Control",
+      "category": "utility",
+      "description": "Manipulate sky as solid surface for levitation, cloaking, or distortion.",
+      "mechanics": {
+        "damage_type": "Spatial",
+        "ce_cost": 150,
+        "ce_cost_mult": 1.5,
+        "stat_scaling": "ce_add",
+        "special_effect": "Pull atmosphere like a sheet. Distort space like a lens. Indirect hits bypass guards."
+      }
+    },
+    {
+      "name": "Thin Ice Breaker",
+      "category": "offense",
+      "description": "Shatter sky surface, sending focused shockwave.",
+      "mechanics": {
+        "damage_type": "Spatial",
+        "ce_cost": 300,
+        "ce_cost_mult": 2.0,
+        "stat_scaling": "ce_add",
+        "special_effect": "Concentrated extension. Indirect hit bypasses defenses and generates massive force."
+      }
+    }
+  ],
+  "domain_expansion": {
+    "name": "Distorted Image of Heaven and Earth",
+    "description": "Multi-layer sky shatter domain. Infinite spatial distortions crush everything inside.",
+    "mechanics": {
+      "ce_cost": 1500,
+      "sure_hit": true,
+      "damage_mult": 1.5,
+      "special_effect": "Infinite ice-like sky breaks. Warps and pulverizes without direct touch."
+    }
+  },
+  "anti_domain_compatible": [
+    "simple_domain",
+    "domain_amplification"
+  ],
+  "barrier_techniques": [],
+  "buffs": {
+    "ce_efficiency_mult": 1.2,
+    "speed_add": 2
+  }
+}

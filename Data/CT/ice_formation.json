@@ -1,0 +1,47 @@
+{
+  "id": "ice_formation",
+  "name": "Ice Formation (Hikori Juh\u014d)",
+  "type": "Innate Technique",
+  "rarity": "special_grade",
+  "weight": 2,
+  "requirements": {
+    "required_identity": "reincarnation",
+    "required_clan": null,
+    "required_trait": null,
+    "min_ce_add": 600,
+    "note": "Uraume vessel preferred. Ancient freezing CE via breath or touch."
+  },
+  "abilities": [
+    {
+      "name": "Frost Calm",
+      "category": "utility",
+      "description": "Exhale freezing mist solidifying into thick ice columns.",
+      "mechanics": {
+        "damage_type": "Ice",
+        "ce_cost": 120,
+        "ce_cost_mult": 1.4,
+        "stat_scaling": "ce_add",
+        "special_effect": "AoE crowd control. Instantly freezes groups. High effectiveness vs multiple targets."
+      }
+    },
+    {
+      "name": "Icefall",
+      "category": "offense",
+      "description": "Telekinetic spiked ice shards rain from the ground.",
+      "mechanics": {
+        "damage_type": "Ice",
+        "ce_cost": 250,
+        "ce_cost_mult": 2.0,
+        "stat_scaling": "ce_add",
+        "special_effect": "Floating icicles skewer and freeze on impact. Can near-wipe squads."
+      }
+    }
+  ],
+  "domain_expansion": null,
+  "anti_domain_compatible": [],
+  "barrier_techniques": [],
+  "buffs": {
+    "ce_efficiency_mult": 1.2,
+    "rct_level_add": 1
+  }
+}

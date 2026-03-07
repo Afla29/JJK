@@ -1,0 +1,34 @@
+{
+  "id": "comedian",
+  "name": "Comedian (Komedian)",
+  "type": "Innate Technique",
+  "rarity": "special_grade",
+  "weight": 1,
+  "requirements": {
+    "required_identity": null,
+    "required_clan": null,
+    "required_trait": null,
+    "min_ce_add": 700,
+    "note": "Requires genuine comedic timing. Weak jokes cause backlash. See player_input_ct.json."
+  },
+  "abilities": [
+    {
+      "name": "It would be funny if...",
+      "category": "utility",
+      "description": "Player types a scenario. Reality bends to genuine humor.",
+      "mechanics": {
+        "damage_type": "Reality Warp",
+        "ce_cost": 150,
+        "ce_cost_mult": 2.0,
+        "stat_scaling": "iq",
+        "special_effect": "See player_input_ct.json for full scoring rubric and tier effects. Dynamic input-based."
+      }
+    }
+  ],
+  "domain_expansion": null,
+  "anti_domain_compatible": [],
+  "barrier_techniques": [],
+  "buffs": {
+    "ce_efficiency_mult": 1.0
+  }
+}

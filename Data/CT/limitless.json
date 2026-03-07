@@ -1,0 +1,98 @@
+{
+  "id": "limitless",
+  "name": "Limitless (Mukagen)",
+  "type": "Innate Technique",
+  "rarity": "special_grade",
+  "weight": 1,
+  "requirements": {
+    "required_identity": null,
+    "required_clan": "gojo",
+    "required_trait": "Six Eyes",
+    "min_ce_add": 800,
+    "note": "Requires Six Eyes for full mastery and near-zero CE cost."
+  },
+  "abilities": [
+    {
+      "name": "Infinity",
+      "category": "defense",
+      "description": "Creates infinite distance between user and attacks.",
+      "mechanics": {
+        "damage_type": null,
+        "ce_cost": 20,
+        "ce_cost_mult": 0.5,
+        "stat_scaling": "ce_efficiency_mult",
+        "special_effect": "Slows approaching objects to near-zero. Requires Six Eyes for constant activation."
+      }
+    },
+    {
+      "name": "Blue",
+      "category": "offense",
+      "description": "Attraction force that pulls and crushes matter.",
+      "mechanics": {
+        "damage_type": "Cursed Energy",
+        "ce_cost": 100,
+        "ce_cost_mult": 1.5,
+        "stat_scaling": "ct_mastery",
+        "special_effect": "Generates negative space creating vacuum-like implosion."
+      }
+    },
+    {
+      "name": "Blue: Maximum Output",
+      "category": "offense",
+      "description": "Amplified Blue for massive area effect.",
+      "mechanics": {
+        "damage_type": "Cursed Energy",
+        "ce_cost": 300,
+        "ce_cost_mult": 2.5,
+        "stat_scaling": "ct_mastery",
+        "special_effect": "Overcharged implosion. Can level buildings. High CE drain."
+      }
+    },
+    {
+      "name": "Red",
+      "category": "offense",
+      "description": "Repulsion force that blasts away with positive energy.",
+      "mechanics": {
+        "damage_type": "Cursed Energy",
+        "ce_cost": 200,
+        "ce_cost_mult": 2.0,
+        "stat_scaling": "ct_mastery",
+        "special_effect": "Reverses CE to positive, generating explosive divergence."
+      }
+    },
+    {
+      "name": "Hollow Purple",
+      "category": "offense",
+      "description": "Collision of Blue and Red. Imaginary mass erasure.",
+      "mechanics": {
+        "damage_type": "Imaginary",
+        "ce_cost": 500,
+        "ce_cost_mult": 3.0,
+        "stat_scaling": "ct_mastery",
+        "special_effect": "Merges convergence and divergence. Erases everything in path. Unblockable by most defenses."
+      }
+    }
+  ],
+  "domain_expansion": {
+    "name": "Unlimited Void",
+    "description": "Infinite void. Target bombarded with endless information \u2014 total paralysis.",
+    "mechanics": {
+      "ce_cost": 1500,
+      "sure_hit": true,
+      "damage_mult": 1.0,
+      "special_effect": "Infinite info overload. Sure-hit paralysis."
+    }
+  },
+  "anti_domain_compatible": [
+    "simple_domain",
+    "domain_amplification",
+    "falling_blossom_emotion"
+  ],
+  "barrier_techniques": [
+    "Curtain: Barrier dome to conceal or restrict areas."
+  ],
+  "buffs": {
+    "ce_efficiency_mult": 2.0,
+    "rct_level_add": 1
+  }
+}

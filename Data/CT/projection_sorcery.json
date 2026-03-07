@@ -1,0 +1,48 @@
+{
+  "id": "projection_sorcery",
+  "name": "Projection Sorcery (T\u014dsha Juh\u014d)",
+  "type": "Innate Technique",
+  "rarity": "special_grade",
+  "weight": 2,
+  "requirements": {
+    "required_identity": null,
+    "required_clan": "zenin",
+    "required_trait": null,
+    "min_ce_add": 700,
+    "note": "Divides 1 second into 24 frames. Inherited Zenin technique."
+  },
+  "abilities": [
+    {
+      "name": "24 FPS Frame Rule",
+      "category": "utility",
+      "description": "Split 1 second into 24 frames. Preset movement traces.",
+      "mechanics": {
+        "damage_type": null,
+        "ce_cost": 100,
+        "ce_cost_mult": 1.5,
+        "stat_scaling": "speed",
+        "special_effect": "Blitz-speed movement. Palm touch freezes non-compliant targets in frame for 1 second. Bypasses eye tracking."
+      }
+    }
+  ],
+  "domain_expansion": {
+    "name": "Time Cell Moon Palace",
+    "description": "Womb-like domain with giant eye. Enforces 24 FPS rules on cellular level.",
+    "mechanics": {
+      "ce_cost": 1400,
+      "sure_hit": true,
+      "damage_mult": 1.3,
+      "special_effect": "Sure-hit film lines shatter cells. Total body freeze/destruction from inside out."
+    }
+  },
+  "anti_domain_compatible": [
+    "simple_domain",
+    "domain_amplification",
+    "falling_blossom_emotion"
+  ],
+  "barrier_techniques": [],
+  "buffs": {
+    "ce_efficiency_mult": 1.0,
+    "speed_add": 3
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "cursed_energy_discharge",
+  "name": "Cursed Energy Discharge (Juryoku no H\u014dshutsu)",
+  "type": "Innate Technique",
+  "rarity": "special_grade",
+  "weight": 2,
+  "requirements": {
+    "required_identity": "reincarnation",
+    "required_clan": null,
+    "required_trait": null,
+    "min_ce_add": 900,
+    "note": "Heian-era. Ryu Ishigori vessel preferred. Pompadour cannon output."
+  },
+  "abilities": [
+    {
+      "name": "Directed CE Blast",
+      "category": "offense",
+      "description": "Concentrated CE beams from pompadour cannon.",
+      "mechanics": {
+        "damage_type": "Cursed Energy",
+        "ce_cost": 200,
+        "ce_cost_mult": 1.8,
+        "stat_scaling": "ce_add",
+        "special_effect": "Same power whether technique active or not. Versatile range."
+      }
+    },
+    {
+      "name": "Granite Blast",
+      "category": "offense",
+      "description": "Hyper-concentrated CE beam at full output.",
+      "mechanics": {
+        "damage_type": "Cursed Energy",
+        "ce_cost": 600,
+        "ce_cost_mult": 3.0,
+        "stat_scaling": "ce_add",
+        "special_effect": "City-block level destruction. Maximum output mode."
+      }
+    }
+  ],
+  "domain_expansion": {
+    "name": "Banquet of Starving Pride",
+    "description": "Endless CE beam spam domain. Sure-hit from all angles.",
+    "mechanics": {
+      "ce_cost": 1800,
+      "sure_hit": true,
+      "damage_mult": 1.5,
+      "special_effect": "No escape. Pure output overload until target vaporized."
+    }
+  },
+  "anti_domain_compatible": [
+    "simple_domain",
+    "domain_amplification"
+  ],
+  "barrier_techniques": [],
+  "buffs": {
+    "ce_efficiency_mult": 1.0,
+    "attack_mult": 1.5
+  }
+}

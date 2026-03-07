@@ -1,0 +1,130 @@
+{
+  "id": "blood_manipulation",
+  "name": "Blood Manipulation (Sekketsu S\u014djutsu)",
+  "type": "Innate Technique",
+  "rarity": "semi_special_grade",
+  "weight": 3,
+  "requirements": {
+    "required_identity": "death_painting (choso_type)",
+    "required_clan": "kamo",
+    "required_trait": null,
+    "min_ce_add": 500,
+    "note": "Requires external or internal blood source."
+  },
+  "abilities": [
+    {
+      "name": "Flowing Red Scale",
+      "category": "buff",
+      "description": "Boost body temp and red blood cells for massive physical amp.",
+      "mechanics": {
+        "damage_type": null,
+        "ce_cost": 80,
+        "ce_cost_mult": 1.2,
+        "stat_scaling": "ct_mastery",
+        "special_effect": "Increases strength, speed, durability. Passive sustain possible."
+      }
+    },
+    {
+      "name": "Flowing Red Scale: Stack",
+      "category": "buff",
+      "description": "Overclocked FRS for extreme output.",
+      "mechanics": {
+        "damage_type": null,
+        "ce_cost": 150,
+        "ce_cost_mult": 1.8,
+        "stat_scaling": "ct_mastery",
+        "special_effect": "Amps all stats further. Risk of body strain if overused."
+      }
+    },
+    {
+      "name": "Crimson Binding",
+      "category": "utility",
+      "description": "Wide blood net to trap targets.",
+      "mechanics": {
+        "damage_type": null,
+        "ce_cost": 120,
+        "ce_cost_mult": 1.5,
+        "stat_scaling": "ct_mastery",
+        "special_effect": "Tightens on contact. Hard to break without high strength or CE burst."
+      }
+    },
+    {
+      "name": "Slicing Exorcism",
+      "category": "offense",
+      "description": "Long-range blood slashes.",
+      "mechanics": {
+        "damage_type": "Physical",
+        "ce_cost": 100,
+        "ce_cost_mult": 1.4,
+        "stat_scaling": "ct_mastery",
+        "special_effect": "Cuts through flesh and barriers. Versatile range."
+      }
+    },
+    {
+      "name": "Convergence",
+      "category": "utility",
+      "description": "Compress blood to extreme density.",
+      "mechanics": {
+        "damage_type": null,
+        "ce_cost": 200,
+        "ce_cost_mult": 1.0,
+        "stat_scaling": "ct_mastery",
+        "special_effect": "Creates condensed blood orb \u2014 required for Piercing Blood and Supernova."
+      }
+    },
+    {
+      "name": "Piercing Blood",
+      "category": "offense",
+      "description": "Supersonic blood beam from Convergence orb.",
+      "mechanics": {
+        "damage_type": "Physical",
+        "ce_cost": 400,
+        "ce_cost_mult": 2.5,
+        "stat_scaling": "ct_mastery",
+        "special_effect": "Sound-speed piercing shot. Extreme range and penetration."
+      }
+    },
+    {
+      "name": "Supernova",
+      "category": "offense",
+      "description": "Multiple condensed orbs as buckshot explosion.",
+      "mechanics": {
+        "damage_type": "Physical",
+        "ce_cost": 350,
+        "ce_cost_mult": 2.0,
+        "stat_scaling": "ct_mastery",
+        "special_effect": "AoE scatter. Choso original after 150+ years of refinement."
+      }
+    },
+    {
+      "name": "Blood Edge",
+      "category": "offense",
+      "description": "High-speed rotating liquid dagger.",
+      "mechanics": {
+        "damage_type": "Physical",
+        "ce_cost": 90,
+        "ce_cost_mult": 1.3,
+        "stat_scaling": "strength",
+        "special_effect": "Spinning liquid blade. Extreme cutting power at close range."
+      }
+    },
+    {
+      "name": "Blood Meteorite",
+      "category": "offense",
+      "description": "Hardened blood chunks as projectiles.",
+      "mechanics": {
+        "damage_type": "Physical",
+        "ce_cost": 150,
+        "ce_cost_mult": 1.6,
+        "stat_scaling": "strength",
+        "special_effect": "Fast mid-range spam. Weaker than Piercing Blood."
+      }
+    }
+  ],
+  "domain_expansion": null,
+  "anti_domain_compatible": [],
+  "barrier_techniques": [],
+  "buffs": {
+    "ce_efficiency_mult": 1.0
+  }
+}
