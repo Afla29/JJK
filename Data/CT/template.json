@@ -1,0 +1,49 @@
+{
+  "id": "unique_id_lowercase",
+  "name": "English Name (Romaji Name)",
+  "type": "Innate Technique",
+  "rarity": "common | semi_special_grade | special_grade",
+  "weight": 5,
+  "requirements": {
+    "required_identity": null,
+    "required_clan": null,
+    "required_trait": null,
+    "min_ce_add": 0,
+    "note": null
+  },
+  "abilities": [
+    {
+      "name": "Ability Name",
+      "category": "offense | defense | utility | passive | shikigami | buff",
+      "description": "Flavor text.",
+      "mechanics": {
+        "damage_type": "Physical | Cursed Energy | Soul | Ice | Lightning | Spatial | Adaptive | Reality Warp | Crushing | Imaginary | null",
+        "ce_cost": 50,
+        "ce_cost_mult": 1.0,
+        "stat_scaling": "strength | speed | ce_add | ct_mastery | ce_efficiency_mult | biq | iq | null",
+        "special_effect": "Effect description."
+      }
+    }
+  ],
+  "domain_expansion": {
+    "name": "Domain Name",
+    "description": "Flavor.",
+    "mechanics": {
+      "ce_cost": 1000,
+      "sure_hit": true,
+      "damage_mult": 1.2,
+      "special_effect": null
+    }
+  },
+  "anti_domain_compatible": [
+    "simple_domain",
+    "domain_amplification",
+    "falling_blossom_emotion"
+  ],
+  "barrier_techniques": [
+    "Curtain (Tobari)"
+  ],
+  "buffs": {
+    "ce_efficiency_mult": 1.0
+  }
+}
