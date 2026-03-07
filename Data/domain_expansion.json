@@ -1,0 +1,115 @@
+{
+  "domain_expansion": {
+    "unlock_requirements": {
+      "min_ct_mastery_value": 7,
+      "min_ce_add": 1000,
+      "min_iq_value": 3,
+      "event_required": "Survived near-death event OR completed domain training event."
+    },
+    "creation_prompts": [
+      {
+        "field": "domain_name",
+        "prompt": "What is your domain called?"
+      },
+      {
+        "field": "environment",
+        "prompt": "What does the interior look, feel, and sound like?"
+      },
+      {
+        "field": "sure_hit_effect",
+        "prompt": "What is the guaranteed damaging effect inside?"
+      },
+      {
+        "field": "barrier_type",
+        "prompt": "Closed (sure-hit, both trapped) or Open (wide area, no sure-hit)?"
+      }
+    ],
+    "ai_note": "Domain theme must match CT. Blood user cannot have a fire domain.",
+    "ce_cost_formula": {
+      "closed": "ce_add * 0.6",
+      "open": "ce_add * 0.3"
+    },
+    "mastery_levels": [
+      {
+        "value": 1,
+        "name": "Unrefined",
+        "duration_rounds": 2,
+        "damage_mult": 1.0,
+        "collapse_chance_pct": 30
+      },
+      {
+        "value": 2,
+        "name": "Stable",
+        "duration_rounds": 4,
+        "damage_mult": 1.1,
+        "collapse_chance_pct": 10
+      },
+      {
+        "value": 3,
+        "name": "Refined",
+        "duration_rounds": 6,
+        "damage_mult": 1.2,
+        "collapse_chance_pct": 2
+      },
+      {
+        "value": 4,
+        "name": "Mastered",
+        "duration_rounds": 8,
+        "damage_mult": 1.5,
+        "collapse_chance_pct": 0,
+        "bonus": "Can now deploy as Open Barrier via binding vow."
+      },
+      {
+        "value": 5,
+        "name": "Perfected",
+        "duration_rounds": -1,
+        "damage_mult": 2.0,
+        "collapse_chance_pct": 0,
+        "bonus": "Instant deployment. CE cost halved."
+      }
+    ],
+    "clash": {
+      "formula": "score = domain_mastery + (ct_mastery * 0.5)",
+      "outcomes": [
+        {
+          "margin": "win_3_plus",
+          "result": "Enemy domain overwritten. Enemy inside your sure-hit."
+        },
+        {
+          "margin": "win_1_2",
+          "result": "Enemy domain weakened. Sure-hit at 50%."
+        },
+        {
+          "margin": "tie",
+          "result": "Both shatter. Both take 30% max CE as damage."
+        },
+        {
+          "margin": "lose_1_2",
+          "result": "Your domain shatters. You're in enemy sure-hit."
+        },
+        {
+          "margin": "lose_3_plus",
+          "result": "Obliterated. Full sure-hit + collapse damage."
+        }
+      ]
+    },
+    "anti_domain_counters": [
+      {
+        "technique": "Simple Domain",
+        "effect": "Negates sure-hit in 2m radius for 2-3 rounds."
+      },
+      {
+        "technique": "Domain Amplification",
+        "effect": "Wraps body in CE. Negates sure-hit for user only."
+      },
+      {
+        "technique": "Falling Blossom Emotion",
+        "effect": "Converts sure-hit damage into CE gain."
+      },
+      {
+        "technique": "Infinity",
+        "effect": "Sure-hit slows to near-zero. Requires Six Eyes for sustained use."
+      }
+    ]
+  }
+}

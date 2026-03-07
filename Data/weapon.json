@@ -1,0 +1,141 @@
+{
+  "weapon": {
+    "pools": {
+      "common": [
+        {
+          "id": "standard_katana",
+          "weight": 40
+        },
+        {
+          "id": "standard_spear",
+          "weight": 30
+        },
+        {
+          "id": "miwas_katana",
+          "weight": 20
+        },
+        {
+          "id": "slaughter_demon",
+          "weight": 10
+        }
+      ],
+      "special": [
+        {
+          "id": "playful_cloud",
+          "weight": 7
+        },
+        {
+          "id": "split_soul_katana",
+          "weight": 5
+        },
+        {
+          "id": "inverted_spear_of_heaven",
+          "weight": 3
+        },
+        {
+          "id": "chain_of_thousand_miles",
+          "weight": 6
+        },
+        {
+          "id": "dragon_bone",
+          "weight": 8
+        },
+        {
+          "id": "nanamis_blunt_sword",
+          "weight": 9
+        },
+        {
+          "id": "festering_life_sword",
+          "weight": 5
+        },
+        {
+          "id": "kamutoke",
+          "weight": 4
+        },
+        {
+          "id": "hiten_honoyagi",
+          "weight": 4
+        },
+        {
+          "id": "black_rope",
+          "weight": 7
+        },
+        {
+          "id": "harutas_hand_sword",
+          "weight": 8
+        },
+        {
+          "id": "mei_meis_battle_axe",
+          "weight": 9
+        },
+        {
+          "id": "megumis_jet_black_shadow_sword",
+          "weight": 15
+        }
+      ],
+      "_note": "Both pools independently sum to 100. Roll pool tier first, then roll within pool."
+    },
+    "mastery_levels": [
+      {
+        "name": "Novice",
+        "weight": 40,
+        "value": 1,
+        "damage_mult": 0.8
+      },
+      {
+        "name": "Beginner",
+        "weight": 25,
+        "value": 2,
+        "damage_mult": 1.0
+      },
+      {
+        "name": "Skilled",
+        "weight": 15,
+        "value": 3,
+        "damage_mult": 1.2
+      },
+      {
+        "name": "Experienced",
+        "weight": 10,
+        "value": 4,
+        "damage_mult": 1.4
+      },
+      {
+        "name": "Proficient",
+        "weight": 5,
+        "value": 5,
+        "damage_mult": 1.6
+      },
+      {
+        "name": "Expert",
+        "weight": 3,
+        "value": 6,
+        "damage_mult": 1.8
+      },
+      {
+        "name": "Veteran",
+        "weight": 1.5,
+        "value": 7,
+        "damage_mult": 2.0
+      },
+      {
+        "name": "Master",
+        "weight": 0.8,
+        "value": 8,
+        "damage_mult": 2.3
+      },
+      {
+        "name": "Grandmaster",
+        "weight": 0.4,
+        "value": 9,
+        "damage_mult": 2.7
+      },
+      {
+        "name": "Legendary",
+        "weight": 0.1,
+        "value": 10,
+        "damage_mult": 3.0
+      }
+    ]
+  }
+}

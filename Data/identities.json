@@ -1,0 +1,113 @@
+{
+  "identities": [
+    {
+      "id": "jujutsu_sorcerer",
+      "name": "Jujutsu Sorcerer",
+      "weight": 33,
+      "buffs": {
+        "ce_add": 200,
+        "iq_add": 1
+      },
+      "job_spin": true,
+      "sub_spin": null,
+      "description": "Standard sorcerer. Affiliated with Jujutsu High."
+    },
+    {
+      "id": "curse_user",
+      "name": "Curse User",
+      "weight": 18,
+      "buffs": {
+        "ce_add": 150,
+        "biq_add": 1
+      },
+      "job_spin": true,
+      "sub_spin": null,
+      "description": "Use jujutsu for personal gain. Outside the law."
+    },
+    {
+      "id": "death_painting",
+      "name": "Death Painting",
+      "weight": 6,
+      "buffs": {
+        "ce_add": 1000,
+        "strength_add": 2,
+        "durability_add": 2
+      },
+      "job_spin": false,
+      "sub_spin": "death_painting",
+      "description": "Half-human, half-cursed spirit hybrid."
+    },
+    {
+      "id": "reincarnation",
+      "name": "Reincarnation",
+      "weight": 10,
+      "buffs": {
+        "ce_add": 500,
+        "biq_add": 2
+      },
+      "job_spin": true,
+      "sub_spin": "reincarnation",
+      "description": "Ancient sorcerer in a new vessel."
+    },
+    {
+      "id": "heavenly_restriction",
+      "name": "Heavenly Restriction",
+      "weight": 6,
+      "buffs": {},
+      "job_spin": false,
+      "sub_spin": "heavenly_restriction",
+      "description": "Trade CE for physical power, or vice-versa."
+    },
+    {
+      "id": "sukuna_vessel",
+      "name": "Sukuna's Vessel",
+      "weight": 3,
+      "buffs": {
+        "strength_add": 1,
+        "speed_add": 1
+      },
+      "job_spin": false,
+      "sub_spin": "sukuna_vessel",
+      "description": "Capable of hosting the King of Curses."
+    },
+    {
+      "id": "bounty_hunter",
+      "name": "Bounty Hunter",
+      "weight": 11,
+      "buffs": {
+        "biq_add": 2,
+        "weapon_mastery_add": 2
+      },
+      "job_spin": true,
+      "sub_spin": null,
+      "description": "Track and neutralize rogue sorcerers."
+    },
+    {
+      "id": "cursed_corpse",
+      "name": "Cursed Corpse",
+      "weight": 8,
+      "buffs": {
+        "strength_add": 3,
+        "durability_add": 3,
+        "ce_add": 300
+      },
+      "job_spin": false,
+      "sub_spin": null,
+      "description": "Artificial object with a soul."
+    },
+    {
+      "id": "cursed_spirit",
+      "name": "Cursed Spirit",
+      "weight": 5,
+      "buffs": {
+        "ce_add": 2000,
+        "strength_add": 1,
+        "can_regen_with_ce": true
+      },
+      "job_spin": false,
+      "sub_spin": null,
+      "description": "Manifestation of human negative emotions."
+    }
+  ],
+  "_weight_total": 100
+}

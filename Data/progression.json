@@ -1,0 +1,164 @@
+{
+  "progression": {
+    "xp_formula": "final_xp = base_xp * age.exp_mult * iq.exp_mult",
+    "xp_sources": [
+      {
+        "source": "Win a battle",
+        "base_xp": 100,
+        "note": "\u00d7 enemy grade rank (1-8)"
+      },
+      {
+        "source": "Lose a battle",
+        "base_xp": 40
+      },
+      {
+        "source": "Black Flash triggered",
+        "base_xp": 75
+      },
+      {
+        "source": "Complete a mission",
+        "base_xp": 200,
+        "note": "\u00d7 mission grade rank"
+      },
+      {
+        "source": "Survive near-death",
+        "base_xp": 300,
+        "one_time": true
+      },
+      {
+        "source": "Sensei training session",
+        "base_xp": 150
+      },
+      {
+        "source": "Tame Mahoraga",
+        "base_xp": 1000,
+        "one_time": true
+      },
+      {
+        "source": "Comedian Tier 2+",
+        "base_xp": 80
+      },
+      {
+        "source": "Cursed Speech Rating 3+ no backlash",
+        "base_xp": 60
+      },
+      {
+        "source": "Consume Sukuna finger",
+        "base_xp": 200,
+        "identity_only": "sukuna_vessel"
+      },
+      {
+        "source": "First Domain Expansion",
+        "base_xp": 500,
+        "one_time": true
+      }
+    ],
+    "levels": [
+      {
+        "level": 1,
+        "xp_required": 0,
+        "title": "Newcomer",
+        "stat_points": 0
+      },
+      {
+        "level": 2,
+        "xp_required": 500,
+        "title": "Novice Sorcerer",
+        "stat_points": 2
+      },
+      {
+        "level": 3,
+        "xp_required": 1200,
+        "title": "Practicing Sorcerer",
+        "stat_points": 2
+      },
+      {
+        "level": 4,
+        "xp_required": 2500,
+        "title": "Field Sorcerer",
+        "stat_points": 3
+      },
+      {
+        "level": 5,
+        "xp_required": 4500,
+        "title": "Seasoned Fighter",
+        "stat_points": 3
+      },
+      {
+        "level": 6,
+        "xp_required": 7500,
+        "title": "Grade 2 Contender",
+        "stat_points": 4
+      },
+      {
+        "level": 7,
+        "xp_required": 12000,
+        "title": "Grade 1 Contender",
+        "stat_points": 4
+      },
+      {
+        "level": 8,
+        "xp_required": 20000,
+        "title": "Elite Sorcerer",
+        "stat_points": 5
+      },
+      {
+        "level": 9,
+        "xp_required": 35000,
+        "title": "Special Grade Candidate",
+        "stat_points": 5
+      },
+      {
+        "level": 10,
+        "xp_required": 60000,
+        "title": "Special Grade",
+        "stat_points": 7
+      }
+    ],
+    "stat_point_costs": [
+      {
+        "stat": "strength",
+        "cost": 1
+      },
+      {
+        "stat": "speed",
+        "cost": 1
+      },
+      {
+        "stat": "durability",
+        "cost": 1
+      },
+      {
+        "stat": "biq",
+        "cost": 2
+      },
+      {
+        "stat": "iq",
+        "cost": 2
+      },
+      {
+        "stat": "luck",
+        "cost": 1
+      },
+      {
+        "stat": "ce_amount",
+        "cost": 2,
+        "note": "Each point = +100 flat CE"
+      },
+      {
+        "stat": "ct_mastery",
+        "cost": 3,
+        "note": "Requires 3 technique uses per current level first"
+      },
+      {
+        "stat": "weapon_mastery",
+        "cost": 2
+      },
+      {
+        "stat": "domain_mastery",
+        "cost": 4,
+        "requires": "domain_expansion must exist"
+      }
+    ]
+  }
+}

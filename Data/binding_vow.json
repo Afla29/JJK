@@ -1,0 +1,149 @@
+{
+  "binding_vow": {
+    "_rules": {
+      "activation": "Player declares vow. AI narrator confirms it is active.",
+      "backlash": "Breaking a vow triggers backlash immediately. No exceptions.",
+      "proportionality": "The greater the restriction, the greater the power returned."
+    },
+    "self_vows": [
+      {
+        "id": "revealing_ones_hand",
+        "name": "Revealing One's Hand",
+        "restriction": "Fully explain your CT mechanics, range, cost, and weaknesses to opponent.",
+        "effect": {
+          "attack_mult": 2.0,
+          "ce_efficiency_mult": 1.5,
+          "duration": "entire battle"
+        },
+        "backlash": "Use undisclosed ability \u2192 lose 40% current CE + psychic damage."
+      },
+      {
+        "id": "overtime",
+        "name": "Overtime (Nanami's Vow)",
+        "restriction": "None \u2014 triggers automatically after 3+ rounds.",
+        "effect": {
+          "per_round_buffs": {
+            "strength_add": 1,
+            "speed_add": 1,
+            "biq_add": 1
+          },
+          "max_stacks": 5
+        },
+        "backlash": null,
+        "cost": "CE recovery halved after battle."
+      },
+      {
+        "id": "self_restriction",
+        "name": "Self-Restriction Vow",
+        "restriction": "Player declares a specific ability they will not use this battle.",
+        "effect": {
+          "custom": true,
+          "examples": [
+            {
+              "restrict": "No domain",
+              "boost": "CE output +50%, CE cost -30%"
+            },
+            {
+              "restrict": "No CT \u2014 physical only",
+              "boost": "strength +5, speed +3, durability +3"
+            },
+            {
+              "restrict": "No RCT",
+              "boost": "CT damage +80%"
+            }
+          ]
+        },
+        "backlash": "Break restriction \u2192 lose boost + 50% CE + one stat permanently -1."
+      },
+      {
+        "id": "open_barrier",
+        "name": "Open Domain Barrier",
+        "restriction": "Deploy domain without barrier. No sure-hit. Used with Domain Expansion.",
+        "effect": {
+          "domain_range_mult": 10,
+          "sure_hit": false,
+          "ce_cost_mult": 0.7
+        },
+        "backlash": null
+      },
+      {
+        "id": "death_vow",
+        "name": "Death Vow",
+        "restriction": "Wager your life. Declare 'I wager my life on this battle.'",
+        "effect": {
+          "attack_mult": 2.0,
+          "ce_add_mult": 2.0,
+          "all_stats_mult": 2.0,
+          "duration": "entire battle"
+        },
+        "backlash": "Lose \u2192 permanent death. Flee after declaring \u2192 CE to 0 + all stats permanently halved.",
+        "warning": "PERMANENT DEATH RISK. AI narrator must confirm player intent."
+      }
+    ],
+    "mutual_vows": [
+      {
+        "id": "enchain",
+        "name": "Enchain (Sukuna's Contract)",
+        "parties": [
+          "sukuna_vessel",
+          "sukuna_internal"
+        ],
+        "mechanic": "Player grants Sukuna N minutes of control in exchange for a specific act.",
+        "examples": [
+          {
+            "give": "1 min control",
+            "receive": "Full RCT heal"
+          },
+          {
+            "give": "5 min control",
+            "receive": "Destroy current enemy"
+          },
+          {
+            "give": "10 min control",
+            "receive": "Teach one CE technique"
+          }
+        ],
+        "backlash": "Retake control early \u2192 soul damage + one stat permanently -1."
+      },
+      {
+        "id": "technique_sharing",
+        "name": "Technique Sharing Vow",
+        "parties": [
+          "player",
+          "npc_sorcerer"
+        ],
+        "mechanic": "Both agree to teach each other one technique. Both must follow through.",
+        "backlash": "Refuse to teach \u2192 technique locked for 3 battles."
+      }
+    ],
+    "counter_techniques": [
+      {
+        "id": "simple_domain",
+        "name": "Simple Domain",
+        "effect": "Negates sure-hit in 2m radius.",
+        "ce_cost_per_round": 80,
+        "counters": [
+          "all domain sure-hits",
+          "Projection Sorcery frame rule"
+        ]
+      },
+      {
+        "id": "domain_amplification",
+        "name": "Domain Amplification",
+        "effect": "Wraps body in CE. Sure-hit cannot affect user. Cannot attack while active.",
+        "ce_cost_per_round": 100,
+        "counters": [
+          "all domain sure-hits"
+        ]
+      },
+      {
+        "id": "falling_blossom_emotion",
+        "name": "Falling Blossom Emotion",
+        "effect": "Converts incoming sure-hit damage into CE gain for user. Passive trigger.",
+        "counters": [
+          "all domain sure-hits"
+        ]
+      }
+    ]
+  }
+}

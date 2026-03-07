@@ -1,0 +1,64 @@
+{
+  "strength": [
+    {
+      "name": "Fragile",
+      "weight": 5,
+      "value": 1
+    },
+    {
+      "name": "Below Average",
+      "weight": 10,
+      "value": 2
+    },
+    {
+      "name": "Average",
+      "weight": 25,
+      "value": 3
+    },
+    {
+      "name": "Strong",
+      "weight": 18,
+      "value": 4
+    },
+    {
+      "name": "Peak Human",
+      "weight": 12,
+      "value": 5
+    },
+    {
+      "name": "Super Human",
+      "weight": 10,
+      "value": 6
+    },
+    {
+      "name": "Semi-Grade 1",
+      "weight": 7,
+      "value": 7
+    },
+    {
+      "name": "Grade 1 Level",
+      "weight": 5,
+      "value": 8
+    },
+    {
+      "name": "Semi-Special Grade",
+      "weight": 4,
+      "value": 9
+    },
+    {
+      "name": "Special Grade",
+      "weight": 2.5,
+      "value": 10
+    },
+    {
+      "name": "Unbelievable",
+      "weight": 1,
+      "value": 12
+    },
+    {
+      "name": "Indestructible",
+      "weight": 0.5,
+      "value": 15
+    }
+  ]
+}

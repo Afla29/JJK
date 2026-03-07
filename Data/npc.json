@@ -1,0 +1,288 @@
+{
+  "npc": [
+    {
+      "id": "gojo_satoru",
+      "name": "Satoru Gojo",
+      "faction_id": "jujutsu_high",
+      "grade_id": "special_grade",
+      "ct_id": "limitless",
+      "stats": {
+        "strength": 10,
+        "speed": 15,
+        "durability": 10,
+        "biq": 8,
+        "iq": 10,
+        "ce_add": 9999,
+        "ct_mastery": 10,
+        "domain_mastery": 10,
+        "rct_level": 3
+      },
+      "role": "sensei",
+      "sensei_id": "gojo",
+      "encounter_type": "ally_or_sensei",
+      "description": "The strongest. If you're under his wing, you're either very lucky or very cursed."
+    },
+    {
+      "id": "yuta_okkotsu",
+      "name": "Yuta Okkotsu",
+      "faction_id": "jujutsu_high",
+      "grade_id": "special_grade",
+      "ct_id": "mimicry",
+      "stats": {
+        "strength": 8,
+        "speed": 9,
+        "durability": 9,
+        "biq": 7,
+        "iq": 7,
+        "ce_add": 5000,
+        "ct_mastery": 9,
+        "domain_mastery": 7,
+        "rct_level": 3
+      },
+      "role": "sensei",
+      "sensei_id": "yuta",
+      "encounter_type": "ally_or_sensei",
+      "description": "Gentle giant. Immense CE. Rika is always close."
+    },
+    {
+      "id": "kento_nanami",
+      "name": "Kento Nanami",
+      "faction_id": "jujutsu_high",
+      "grade_id": "grade_1",
+      "ct_id": "ratio_technique",
+      "stats": {
+        "strength": 7,
+        "speed": 7,
+        "durability": 8,
+        "biq": 8,
+        "iq": 9,
+        "ce_add": 1000,
+        "ct_mastery": 8,
+        "domain_mastery": 0,
+        "rct_level": 1
+      },
+      "role": "sensei",
+      "sensei_id": "nanami",
+      "encounter_type": "ally_or_sensei",
+      "description": "Reliable. Hates overtime. Will die for his students."
+    },
+    {
+      "id": "toji_fushiguro",
+      "name": "Toji Fushiguro",
+      "faction_id": "independent",
+      "grade_id": null,
+      "ct_id": null,
+      "stats": {
+        "strength": 12,
+        "speed": 12,
+        "durability": 10,
+        "biq": 10,
+        "iq": 5,
+        "ce_add": 0,
+        "ct_mastery": 0,
+        "weapon_mastery": 10,
+        "rct_level": 0
+      },
+      "role": "sensei",
+      "sensei_id": "toji",
+      "encounter_type": "ally_or_sensei_or_enemy",
+      "description": "Sorcerer Killer. No CE. Pure lethality. He'll either train you or kill you."
+    },
+    {
+      "id": "ryomen_sukuna",
+      "name": "Ryomen Sukuna",
+      "faction_id": "curse_users_association",
+      "grade_id": "special_grade",
+      "ct_id": "shrine",
+      "stats": {
+        "strength": 15,
+        "speed": 15,
+        "durability": 15,
+        "biq": 10,
+        "iq": 10,
+        "ce_add": 99999,
+        "ct_mastery": 10,
+        "domain_mastery": 10,
+        "rct_level": 3
+      },
+      "role": "internal_vessel_entity",
+      "encounter_type": "internal_only",
+      "description": "The King of Curses. Exists inside the vessel. Interacts via enchain or takeover events."
+    },
+    {
+      "id": "kenjaku",
+      "name": "Kenjaku",
+      "faction_id": "curse_users_association",
+      "grade_id": "special_grade",
+      "ct_id": "barrier_techniques",
+      "stats": {
+        "strength": 7,
+        "speed": 8,
+        "durability": 7,
+        "biq": 10,
+        "iq": 10,
+        "ce_add": 8000,
+        "ct_mastery": 10,
+        "domain_mastery": 8,
+        "rct_level": 2
+      },
+      "role": "sensei",
+      "sensei_id": "kenjaku",
+      "encounter_type": "ally_or_enemy",
+      "description": "Ancient brain-swapper. Millennium of scheming. Everything is a move on his board."
+    },
+    {
+      "id": "aoi_todo",
+      "name": "Aoi Todo",
+      "faction_id": "jujutsu_high",
+      "grade_id": "grade_1",
+      "ct_id": "boogie_woogie",
+      "stats": {
+        "strength": 9,
+        "speed": 8,
+        "durability": 9,
+        "biq": 10,
+        "iq": 6,
+        "ce_add": 1200,
+        "ct_mastery": 8,
+        "domain_mastery": 0,
+        "rct_level": 0
+      },
+      "role": "sensei",
+      "sensei_id": "todo",
+      "encounter_type": "ally_or_sensei",
+      "description": "Brotherhood fanatic. Loves a good fight. Will ask about your type."
+    },
+    {
+      "id": "mahito",
+      "name": "Mahito",
+      "faction_id": "curse_users_association",
+      "grade_id": "special_grade",
+      "ct_id": "idle_transfiguration",
+      "stats": {
+        "strength": 9,
+        "speed": 10,
+        "durability": 9,
+        "biq": 9,
+        "iq": 9,
+        "ce_add": 3000,
+        "ct_mastery": 9,
+        "domain_mastery": 7,
+        "rct_level": 3
+      },
+      "role": "enemy",
+      "encounter_type": "enemy",
+      "description": "Embodiment of human hatred. Reshapes souls. Existential threat."
+    },
+    {
+      "id": "mei_mei",
+      "name": "Mei Mei",
+      "faction_id": "independent",
+      "grade_id": "grade_1",
+      "ct_id": "bird_strike",
+      "stats": {
+        "strength": 8,
+        "speed": 8,
+        "durability": 8,
+        "biq": 9,
+        "iq": 8,
+        "ce_add": 1500,
+        "ct_mastery": 8,
+        "domain_mastery": 0,
+        "rct_level": 0,
+        "weapon_mastery": 9
+      },
+      "role": "ally_or_neutral",
+      "encounter_type": "ally_or_neutral",
+      "description": "Grade 1. Obsessed with money. Surprisingly reliable if paid well."
+    },
+    {
+      "id": "kasumi_miwa",
+      "name": "Kasumi Miwa",
+      "faction_id": "jujutsu_high",
+      "grade_id": "grade_3",
+      "ct_id": null,
+      "stats": {
+        "strength": 5,
+        "speed": 7,
+        "durability": 5,
+        "biq": 6,
+        "iq": 6,
+        "ce_add": 300,
+        "ct_mastery": 0,
+        "weapon_mastery": 6,
+        "rct_level": 0
+      },
+      "role": "sensei",
+      "sensei_id": "miwa",
+      "encounter_type": "ally_or_sensei",
+      "description": "Hard-working. Poor. Uses New Shadow Style. Genuinely tries her best."
+    },
+    {
+      "id": "atsuya_kusakabe",
+      "name": "Atsuya Kusakabe",
+      "faction_id": "jujutsu_high",
+      "grade_id": "grade_1",
+      "ct_id": null,
+      "stats": {
+        "strength": 7,
+        "speed": 7,
+        "durability": 8,
+        "biq": 8,
+        "iq": 7,
+        "ce_add": 800,
+        "ct_mastery": 0,
+        "weapon_mastery": 8,
+        "domain_mastery": 4,
+        "rct_level": 0
+      },
+      "role": "sensei",
+      "sensei_id": "kusakabe",
+      "encounter_type": "ally_or_sensei",
+      "description": "Pessimistic realist. Master of Simple Domain and defense. Underrated."
+    },
+    {
+      "id": "shoko_ieiri",
+      "name": "Shoko Ieiri",
+      "faction_id": "jujutsu_high",
+      "grade_id": "grade_1",
+      "ct_id": "reverse_anatomy",
+      "stats": {
+        "strength": 4,
+        "speed": 5,
+        "durability": 5,
+        "biq": 6,
+        "iq": 10,
+        "ce_add": 900,
+        "ct_mastery": 7,
+        "domain_mastery": 0,
+        "rct_level": 3
+      },
+      "role": "sensei",
+      "sensei_id": "shoko",
+      "encounter_type": "ally_or_sensei",
+      "description": "Chief doctor. Genius healer. Always smoking. Will fix you if she feels like it."
+    },
+    {
+      "id": "hajime_kashimo",
+      "name": "Hajime Kashimo",
+      "faction_id": "culling_game",
+      "grade_id": "special_grade",
+      "ct_id": "mythical_beast_amber",
+      "stats": {
+        "strength": 12,
+        "speed": 14,
+        "durability": 10,
+        "biq": 9,
+        "iq": 7,
+        "ce_add": 4000,
+        "ct_mastery": 10,
+        "domain_mastery": 0,
+        "rct_level": 0
+      },
+      "role": "enemy_or_rival",
+      "encounter_type": "culling_game_encounter",
+      "description": "Edo-era lightning sorcerer. Fought his whole life to find an equal. Terrifying speed."
+    }
+  ]
+}

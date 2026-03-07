@@ -1,0 +1,128 @@
+{
+  "grade": {
+    "ranks": [
+      {
+        "id": "grade_4",
+        "name": "Grade 4",
+        "rank": 1,
+        "min_ce_value": 50,
+        "min_combat_score": 1,
+        "starting_grade_for": [
+          "jujutsu_sorcerer",
+          "curse_user"
+        ],
+        "monthly_stipend": 100000,
+        "mission_access": [
+          "grade_4",
+          "haunted_location"
+        ]
+      },
+      {
+        "id": "semi_grade_3",
+        "name": "Semi-Grade 3",
+        "rank": 2,
+        "min_ce_value": 150,
+        "min_combat_score": 2,
+        "unlock": "Complete 3 Grade 4 missions.",
+        "monthly_stipend": 300000,
+        "mission_access": [
+          "semi_grade_3"
+        ]
+      },
+      {
+        "id": "grade_3",
+        "name": "Grade 3",
+        "rank": 3,
+        "min_ce_value": 200,
+        "min_combat_score": 3,
+        "unlock": "Recommendation from a Grade 1 sorcerer or sensei.",
+        "monthly_stipend": 500000,
+        "mission_access": [
+          "grade_3"
+        ]
+      },
+      {
+        "id": "semi_grade_2",
+        "name": "Semi-Grade 2",
+        "rank": 4,
+        "min_ce_value": 350,
+        "min_combat_score": 5,
+        "unlock": "5 Grade 3 missions OR solo defeat of a Grade 2 curse.",
+        "monthly_stipend": 1000000,
+        "mission_access": [
+          "semi_grade_2",
+          "grade_2"
+        ]
+      },
+      {
+        "id": "grade_2",
+        "name": "Grade 2",
+        "rank": 5,
+        "min_ce_value": 500,
+        "min_combat_score": 6,
+        "unlock": "Defeat a semi-special grade curse OR 10 Grade 2 completions.",
+        "monthly_stipend": 2500000,
+        "mission_access": [
+          "grade_2",
+          "emergency_response"
+        ]
+      },
+      {
+        "id": "semi_grade_1",
+        "name": "Semi-Grade 1",
+        "rank": 6,
+        "min_ce_value": 800,
+        "min_combat_score": 7,
+        "unlock": "Defeat a Grade 1 curse supervised OR demonstrate Special Grade technique.",
+        "monthly_stipend": 5000000,
+        "mission_access": [
+          "semi_grade_1"
+        ]
+      },
+      {
+        "id": "grade_1",
+        "name": "Grade 1",
+        "rank": 7,
+        "min_ce_value": 1500,
+        "min_combat_score": 8,
+        "unlock": "Two Grade 1 sponsors OR solo exorcism of a Special Grade curse.",
+        "monthly_stipend": 10000000,
+        "mission_access": [
+          "all"
+        ],
+        "perks": [
+          "Restricted archive access",
+          "Cursed tool priority"
+        ]
+      },
+      {
+        "id": "special_grade",
+        "name": "Special Grade",
+        "rank": 8,
+        "min_ce_value": 3000,
+        "min_combat_score": 9,
+        "unlock": "Unprecedented feat: defeat two Grade 1s simultaneously OR solo a Special Grade.",
+        "monthly_stipend": 50000000,
+        "mission_access": [
+          "unrestricted"
+        ],
+        "perks": [
+          "Autonomy from Jujutsu High",
+          "Sealed object access",
+          "Right to refuse any mission"
+        ],
+        "roster_cap": 4
+      }
+    ],
+    "promotion": {
+      "approval_from": "faction_headquarters",
+      "ai_narrator_handles": true,
+      "rejection_reasons": [
+        "Insufficient missions",
+        "Collateral damage on record",
+        "No sponsor",
+        "Threat to organization"
+      ]
+    }
+  }
+}

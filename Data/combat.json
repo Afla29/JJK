@@ -1,0 +1,63 @@
+{
+  "combat": {
+    "rct": [
+      {
+        "name": "None",
+        "weight": 60,
+        "value": 0,
+        "can_heal_self": false,
+        "can_heal_others": false
+      },
+      {
+        "name": "Self-Healing Only",
+        "weight": 25,
+        "value": 1,
+        "can_heal_self": true,
+        "can_heal_others": false,
+        "heal_mult": 1.0
+      },
+      {
+        "name": "Master Healer",
+        "weight": 10,
+        "value": 2,
+        "can_heal_self": true,
+        "can_heal_others": true,
+        "heal_mult": 2.5
+      },
+      {
+        "name": "Instant Regeneration",
+        "weight": 5,
+        "value": 3,
+        "can_heal_self": true,
+        "can_heal_others": true,
+        "heal_mult": 5.0
+      }
+    ],
+    "luck": [
+      {
+        "name": "Cursed",
+        "weight": 15,
+        "value": 1,
+        "black_flash_mod": 0.5
+      },
+      {
+        "name": "Neutral",
+        "weight": 55,
+        "value": 3,
+        "black_flash_mod": 1.0
+      },
+      {
+        "name": "Heavenly Blessed",
+        "weight": 25,
+        "value": 7,
+        "black_flash_mod": 2.0
+      },
+      {
+        "name": "Miracle Maker",
+        "weight": 5,
+        "value": 10,
+        "black_flash_mod": 4.0
+      }
+    ]
+  }
+}

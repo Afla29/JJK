@@ -1,0 +1,55 @@
+{
+  "heavenly_restriction": [
+    {
+      "id": "physical_gifted",
+      "name": "Physical Gifted (Toji/Maki Type)",
+      "weight": 50,
+      "overrides": {
+        "ce_add": 0,
+        "ce_efficiency_mult": 0,
+        "can_use_jujutsu": false
+      },
+      "buffs": {
+        "strength_add": 12,
+        "speed_add": 12,
+        "biq_add": 8,
+        "luck_add": 5
+      },
+      "special_traits": [
+        "CE Invisible: undetectable by CE sensing",
+        "Weapon Master: weapon_mastery forced to 8",
+        "Domain Immune: immune to sure-hit"
+      ],
+      "blocks": [
+        "ce.amounts",
+        "ce.efficiency",
+        "ct_quantity forced to 0"
+      ],
+      "description": "Trade all CE for godlike physical power."
+    },
+    {
+      "id": "ce_gifted",
+      "name": "CE Gifted (Kokichi/Muta Type)",
+      "weight": 50,
+      "overrides": {
+        "strength_add": 1,
+        "speed_add": 1
+      },
+      "buffs": {
+        "ce_add": 15000,
+        "ce_efficiency_mult": 10.0,
+        "iq_add": 5
+      },
+      "special_traits": [
+        "Puppet Master: control constructs at extreme range",
+        "Infinite Range: CE reaches city-wide",
+        "Heavenly Binding: fragile body, near-limitless CE"
+      ],
+      "blocks": [
+        "strength capped at 2",
+        "speed capped at 2"
+      ],
+      "description": "Fragile body, god-like cursed energy."
+    }
+  ]
+}

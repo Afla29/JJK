@@ -1,0 +1,203 @@
+{
+  "clans": [
+    {
+      "id": "no_clan",
+      "name": "No Clan",
+      "weight": 45,
+      "buffs": {},
+      "description": "Commoner. Start from zero."
+    },
+    {
+      "id": "gojo",
+      "name": "Gojo",
+      "weight": 2.5,
+      "buffs": {
+        "ce_add": 1000,
+        "iq_add": 2
+      },
+      "sub_spins": [
+        {
+          "id": "six_eyes",
+          "chance_pct": 5,
+          "on_true": {
+            "grant_trait": "Six Eyes",
+            "buffs": {
+              "iq_add": 3,
+              "ct_mastery_add": 5,
+              "ce_efficiency_mult": 10.0
+            },
+            "guaranteed_ct": "limitless",
+            "blocks": [
+              "ce.efficiency"
+            ]
+          },
+          "on_false": {
+            "ct_weight_boost": [
+              {
+                "ct_id": "limitless",
+                "pct": 10
+              }
+            ]
+          }
+        }
+      ],
+      "description": "Strongest clan. Limitless bloodline."
+    },
+    {
+      "id": "sugawara",
+      "name": "Sugawara",
+      "weight": 3.5,
+      "buffs": {
+        "ce_add": 2500,
+        "iq_add": 1
+      },
+      "sub_spins": [
+        {
+          "id": "boundless_reserves",
+          "chance_pct": 8,
+          "on_true": {
+            "grant_trait": "Anomaly",
+            "buffs": {
+              "ce_add": 10000,
+              "ct_mastery_add": 2
+            }
+          }
+        }
+      ],
+      "description": "Monstrous CE pools. Yuta bloodline."
+    },
+    {
+      "id": "zenin",
+      "name": "Zenin",
+      "weight": 6,
+      "buffs": {
+        "strength_add": 2,
+        "speed_add": 2,
+        "biq_add": 2
+      },
+      "sub_spins": [
+        {
+          "id": "ten_shadows_inherit",
+          "chance_pct": 10,
+          "on_true": {
+            "guaranteed_ct": "ten_shadows",
+            "buffs": {
+              "ct_mastery_add": 3
+            }
+          }
+        },
+        {
+          "id": "projection_affinity",
+          "chance_pct": 15,
+          "on_true": {
+            "ct_weight_boost": [
+              {
+                "ct_id": "projection_sorcery",
+                "pct": 50
+              }
+            ]
+          }
+        }
+      ],
+      "description": "Physical power and inherited techniques."
+    },
+    {
+      "id": "kamo",
+      "name": "Kamo",
+      "weight": 7,
+      "buffs": {
+        "ce_add": 500,
+        "iq_add": 2,
+        "ce_efficiency_mult": 1.5
+      },
+      "sub_spins": [
+        {
+          "id": "blood_affinity",
+          "chance_pct": 30,
+          "on_true": {
+            "guaranteed_ct": "blood_manipulation",
+            "buffs": {
+              "ct_mastery_add": 2
+            }
+          }
+        }
+      ],
+      "description": "Masters of blood-based techniques."
+    },
+    {
+      "id": "inumaki",
+      "name": "Inumaki",
+      "weight": 6,
+      "buffs": {
+        "ce_efficiency_mult": 1.3,
+        "iq_add": 1
+      },
+      "sub_spins": [
+        {
+          "id": "cursed_speech_inherit",
+          "chance_pct": 40,
+          "on_true": {
+            "guaranteed_ct": "cursed_speech",
+            "buffs": {
+              "ct_mastery_add": 3
+            },
+            "drawback": "Speech restricted to onigiri ingredients outside combat."
+          }
+        }
+      ],
+      "description": "Cursed speech specialists."
+    },
+    {
+      "id": "ashiya",
+      "name": "Ashiya",
+      "weight": 8,
+      "buffs": {
+        "biq_add": 2,
+        "domain_mastery_add": 1
+      },
+      "sub_spins": [
+        {
+          "id": "simple_domain_mastery",
+          "chance_pct": 100,
+          "on_true": {
+            "grant_trait": "New Shadow Style User",
+            "buffs": {
+              "domain_mastery_add": 3
+            }
+          }
+        }
+      ],
+      "description": "Masters of simple domain and defense."
+    },
+    {
+      "id": "fujiwara",
+      "name": "Fujiwara",
+      "weight": 6,
+      "buffs": {
+        "iq_add": 2,
+        "domain_mastery_add": 4
+      },
+      "description": "Ancient nobles. Masters of barriers."
+    },
+    {
+      "id": "abe",
+      "name": "Abe",
+      "weight": 6,
+      "buffs": {
+        "ct_mastery_add": 2,
+        "biq_add": 2
+      },
+      "description": "Ancient warrior lineage."
+    },
+    {
+      "id": "hasaba",
+      "name": "Hasaba",
+      "weight": 8.5,
+      "buffs": {
+        "luck_add": 5,
+        "ct_mastery_add": 1
+      },
+      "description": "Minor rural lineage. Unpredictable births."
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "reincarnation": [
+    {
+      "id": "uraume",
+      "name": "Uraume",
+      "era": "Heian",
+      "ct_id": "ice_formation",
+      "guaranteed_ct": true,
+      "guaranteed_domain": false,
+      "buffs": {
+        "ce_add": 1000,
+        "ce_efficiency_mult": 2.5,
+        "iq_add": 1
+      }
+    },
+    {
+      "id": "kashimo",
+      "name": "Hajime Kashimo",
+      "era": "Edo",
+      "ct_id": "mythical_beast_amber",
+      "guaranteed_ct": true,
+      "guaranteed_domain": false,
+      "buffs": {
+        "speed_add": 10,
+        "biq_add": 2,
+        "strength_add": 5
+      },
+      "special": "Lightning-like CE. Unblockable by standard defenses."
+    },
+    {
+      "id": "angel",
+      "name": "Angel (Hana Kurusu)",
+      "era": "Heian",
+      "ct_id": "angel_technique",
+      "guaranteed_ct": true,
+      "guaranteed_domain": false,
+      "buffs": {
+        "ce_add": 1500,
+        "iq_add": 2,
+        "ce_efficiency_mult": 1.5
+      }
+    },
+    {
+      "id": "reggie",
+      "name": "Reggie Star",
+      "era": "Unknown",
+      "ct_id": "contractual_recreation",
+      "guaranteed_ct": true,
+      "guaranteed_domain": false,
+      "buffs": {
+        "iq_add": 3,
+        "biq_add": 2
+      }
+    },
+    {
+      "id": "hazenoki",
+      "name": "Iori Hazenoki",
+      "era": "Unknown",
+      "ct_id": "explosive_flesh",
+      "guaranteed_ct": true,
+      "guaranteed_domain": false,
+      "buffs": {
+        "durability_add": 5,
+        "ce_add": 500,
+        "rct_level_add": 1
+      }
+    },
+    {
+      "id": "dhruv",
+      "name": "Dhruv Lakdawalla",
+      "era": "Civil War (Wa)",
+      "ct_id": "shikigami_shiva",
+      "guaranteed_ct": true,
+      "guaranteed_domain": false,
+      "buffs": {
+        "ct_mastery_add": 2,
+        "iq_add": 1,
+        "domain_mastery_add": 1
+      }
+    },
+    {
+      "id": "ishigori",
+      "name": "Ryu Ishigori",
+      "era": "Edo",
+      "ct_id": "cursed_energy_discharge",
+      "guaranteed_ct": true,
+      "guaranteed_domain": true,
+      "domain": {
+        "name": "player_named",
+        "base_effect": "Sure-hit massive CE blast."
+      },
+      "buffs": {
+        "ce_add": 5000,
+        "ce_efficiency_mult": 1.5,
+        "strength_add": 8
+      }
+    },
+    {
+      "id": "uro",
+      "name": "Takako Uro",
+      "era": "Heian",
+      "ct_id": "sky_manipulation",
+      "guaranteed_ct": true,
+      "guaranteed_domain": true,
+      "domain": {
+        "name": "player_named",
+        "base_effect": "Sure-hit sky spatial attacks."
+      },
+      "buffs": {
+        "speed_add": 8,
+        "iq_add": 1,
+        "biq_add": 1
+      }
+    },
+    {
+      "id": "daido",
+      "name": "Hagane Daido",
+      "era": "Edo",
+      "ct_id": null,
+      "guaranteed_ct": false,
+      "guaranteed_domain": false,
+      "has_ce": false,
+      "blocks": [
+        "ce.amounts",
+        "ce.efficiency",
+        "ct_quantity forced to 0",
+        "domain_expansion"
+      ],
+      "buffs": {
+        "strength_add": 12,
+        "speed_add": 12,
+        "durability_add": 10,
+        "weapon_mastery_add": 8,
+        "biq_add": 8
+      },
+      "special_traits": [
+        "Sheer Lethality: see lethal cutting lines",
+        "CE Invisible",
+        "Pre-Cognition: read battle one step ahead"
+      ]
+    },
+    {
+      "id": "miyo",
+      "name": "Rokujushi Miyo",
+      "era": "Edo",
+      "ct_id": null,
+      "guaranteed_ct": false,
+      "guaranteed_domain": false,
+      "has_ce": true,
+      "buffs": {
+        "strength_add": 10,
+        "speed_add": 8,
+        "durability_add": 10,
+        "ce_add": 500,
+        "biq_add": 5
+      },
+      "special_traits": [
+        "Sumo Specialist: pinned enemies can't use techniques",
+        "Simple Domain: negate one sure-hit per battle"
+      ]
+    },
+    {
+      "id": "yorozu",
+      "name": "Yorozu",
+      "era": "Heian",
+      "ct_id": "construction",
+      "guaranteed_ct": true,
+      "guaranteed_domain": true,
+      "domain": {
+        "name": "Three-Fold Affliction",
+        "is_canon": true,
+        "description": "Sure-hit sphere of destruction."
+      },
+      "buffs": {
+        "ct_mastery_add": 3,
+        "iq_add": 2,
+        "ce_add": 2000
+      }
+    }
+  ]
+}

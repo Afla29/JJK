@@ -1,0 +1,87 @@
+{
+  "traits": [
+    {
+      "id": "none",
+      "name": "None",
+      "weight": 50,
+      "buffs": {},
+      "special_effect": null
+    },
+    {
+      "id": "steel_physique",
+      "name": "Steel-Bound Physique",
+      "weight": 10,
+      "buffs": {
+        "durability_add": 5,
+        "strength_add": 2
+      },
+      "special_effect": "Incoming physical damage reduced by 15%."
+    },
+    {
+      "id": "ce_sensitivity",
+      "name": "CE Sensitivity",
+      "weight": 8,
+      "buffs": {
+        "biq_add": 1,
+        "speed_add": 2
+      },
+      "special_effect": "Sense CE activation before it lands. +10% evasion."
+    },
+    {
+      "id": "black_flash_magnet",
+      "name": "Black Flash Magnet",
+      "weight": 5,
+      "buffs": {
+        "black_flash_mod": 2.5
+      },
+      "special_effect": null
+    },
+    {
+      "id": "vow_naturalist",
+      "name": "Binding Vow Naturalist",
+      "weight": 7,
+      "buffs": {},
+      "special_effect": "All binding vow power boosts +30%."
+    },
+    {
+      "id": "tool_affinity",
+      "name": "Cursed Tool Affinity",
+      "weight": 6,
+      "buffs": {
+        "weapon_mastery_add": 2
+      },
+      "special_effect": "Equipped weapon gains +20% damage and durability."
+    },
+    {
+      "id": "strong_interest",
+      "name": "Strong Interest",
+      "weight": 4,
+      "buffs": {},
+      "special_effect": "biq +5 vs opponent matching your stated interest."
+    },
+    {
+      "id": "soul_perception",
+      "name": "Soul Perception",
+      "weight": 3,
+      "buffs": {},
+      "special_effect": "Attacks damage soul. Bypasses regeneration."
+    },
+    {
+      "id": "monster_output",
+      "name": "Monster Output",
+      "weight": 2,
+      "buffs": {
+        "attack_mult": 1.5,
+        "ce_cost_mult": 1.3
+      },
+      "special_effect": null
+    },
+    {
+      "id": "pain_tolerance",
+      "name": "High Pain Tolerance",
+      "weight": 5,
+      "buffs": {},
+      "special_effect": "Ignore all stat penalties until HP < 10%."
+    }
+  ]
+}

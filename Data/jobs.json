@@ -1,0 +1,113 @@
+{
+  "jobs": {
+    "eligible_identities": [
+      "jujutsu_sorcerer",
+      "curse_user",
+      "reincarnation",
+      "bounty_hunter"
+    ],
+    "rolls": [
+      {
+        "id": "assassin",
+        "name": "Assassin",
+        "weight": 10,
+        "buffs": {
+          "biq_add": 2,
+          "speed_add": 2
+        },
+        "special": "First Strike: +50% damage on first attack each battle."
+      },
+      {
+        "id": "underground_fighter",
+        "name": "Underground Fighter",
+        "weight": 15,
+        "buffs": {
+          "strength_add": 2,
+          "durability_add": 1,
+          "biq_add": 1
+        },
+        "special": "CQC Mastery: +30% hand-to-hand damage."
+      },
+      {
+        "id": "researcher",
+        "name": "Jujutsu Researcher",
+        "weight": 8,
+        "buffs": {
+          "iq_add": 3,
+          "ce_efficiency_mult": 1.5
+        },
+        "special": "Analysis: Reveal one opponent stat before each battle."
+      },
+      {
+        "id": "curse_manager",
+        "name": "Curse Manager",
+        "weight": 10,
+        "buffs": {
+          "iq_add": 2,
+          "biq_add": 1
+        },
+        "special": "Negotiator: 30% chance to recruit a defeated low-grade spirit."
+      },
+      {
+        "id": "antique_merchant",
+        "name": "Antique Merchant",
+        "weight": 12,
+        "buffs": {
+          "luck_add": 3
+        },
+        "special": "Appraisal: Start with one free weapon from special pool."
+      },
+      {
+        "id": "bounty_hunter",
+        "name": "Bounty Hunter",
+        "weight": 12,
+        "buffs": {
+          "biq_add": 2,
+          "speed_add": 1,
+          "weapon_mastery_add": 1
+        },
+        "special": "Tracking: Encounter rare NPCs and faction contacts more often."
+      },
+      {
+        "id": "bodyguard",
+        "name": "Sorcerer Bodyguard",
+        "weight": 10,
+        "buffs": {
+          "durability_add": 2,
+          "biq_add": 1
+        },
+        "special": "Guard: 20% reduced damage when protecting an ally."
+      },
+      {
+        "id": "info_broker",
+        "name": "Information Broker",
+        "weight": 8,
+        "buffs": {
+          "iq_add": 2,
+          "luck_add": 2
+        },
+        "special": "Spying: Know enemy CT name before the fight."
+      },
+      {
+        "id": "exterminator",
+        "name": "Curse Exterminator",
+        "weight": 10,
+        "buffs": {
+          "ce_add": 300,
+          "ce_efficiency_mult": 1.3
+        },
+        "special": "Stamina: CE recovers 20% faster after battle."
+      },
+      {
+        "id": "wanderer",
+        "name": "Wanderer",
+        "weight": 5,
+        "buffs": {
+          "luck_add": 5,
+          "ct_mastery_add": 1
+        },
+        "special": "Free Spirit: Random bonus event each story arc."
+      }
+    ]
+  }
+}

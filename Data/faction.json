@@ -1,0 +1,130 @@
+{
+  "faction": [
+    {
+      "id": "jujutsu_high",
+      "name": "Jujutsu High (Tokyo/Kyoto)",
+      "alignment": "lawful",
+      "accessible_identities": [
+        "jujutsu_sorcerer",
+        "sukuna_vessel",
+        "reincarnation"
+      ],
+      "starting_grade": "grade_4",
+      "benefits": [
+        "Monthly stipend from grade.json",
+        "Mission board access (grade-gated)",
+        "Sensei assignment available",
+        "Cursed tool priority allocation",
+        "Medical support from Shoko Ieiri"
+      ],
+      "restrictions": [
+        "Must report major incidents",
+        "Cannot accept illegal commissions",
+        "Collateral damage tracked \u2014 affects promotion"
+      ],
+      "key_npcs": [
+        "gojo_satoru",
+        "yuta_okkotsu",
+        "shoko_ieiri",
+        "kento_nanami",
+        "atsuya_kusakabe"
+      ],
+      "faction_perks": {
+        "grade_1_plus": "Access to restricted jujutsu archives.",
+        "special_grade": "Operational autonomy. Right to refuse any mission."
+      },
+      "description": "The official governing body of jujutsu sorcerers. Hierarchy-driven, politically complex."
+    },
+    {
+      "id": "curse_users_association",
+      "name": "Curse Users' Association",
+      "alignment": "chaotic",
+      "accessible_identities": [
+        "curse_user",
+        "reincarnation",
+        "cursed_spirit",
+        "bounty_hunter"
+      ],
+      "starting_grade": null,
+      "benefits": [
+        "No mission restrictions \u2014 any commission accepted",
+        "Access to black market cursed tools",
+        "Faction network: cursed spirits as allies",
+        "Higher pay per mission (\u00d71.5 stipend equivalent)",
+        "Kenjaku contacts available as sensei"
+      ],
+      "restrictions": [
+        "No Jujutsu High protection or backup",
+        "Hunted by Jujutsu High if flagged",
+        "Internal betrayal always possible"
+      ],
+      "key_npcs": [
+        "kenjaku",
+        "mahito",
+        "jogo",
+        "hanami",
+        "dagon"
+      ],
+      "faction_perks": {
+        "any_rank": "Deploy cursed spirits as combat allies.",
+        "high_rank": "Access to finger bearer intel and sealed objects."
+      },
+      "description": "Loose coalition of outlaws, rogue sorcerers, and curse manipulators. Power over law."
+    },
+    {
+      "id": "culling_game",
+      "name": "Culling Game (Kenjaku's Arena)",
+      "alignment": "neutral_chaos",
+      "accessible_identities": [
+        "any"
+      ],
+      "starting_grade": null,
+      "benefits": [
+        "Points system: kill sorcerers or add rules for points",
+        "Points can be spent to exit the colony or unlock rules",
+        "Power scaling accelerated \u2014 high XP from kills",
+        "No faction loyalty required"
+      ],
+      "restrictions": [
+        "Cannot leave colony without spending points",
+        "Permanent death risk is elevated",
+        "No medical support unless within colony bounds"
+      ],
+      "key_npcs": [
+        "hajime_kashimo",
+        "angel",
+        "takako_uro",
+        "yorozu",
+        "reggie_star"
+      ],
+      "rules_system": {
+        "add_rule_cost_points": 100,
+        "exit_colony_cost_points": 100,
+        "kill_sorcerer_reward_points": "5 per grade rank (Grade 4 = 5pts, Special Grade = 40pts)"
+      },
+      "description": "Kenjaku's awakening ritual disguised as a death game. No rules except the ones you write."
+    },
+    {
+      "id": "independent",
+      "name": "Independent",
+      "alignment": "neutral",
+      "accessible_identities": [
+        "any"
+      ],
+      "starting_grade": null,
+      "benefits": [
+        "No restrictions on who to work for",
+        "Can switch factions later with narrative justification",
+        "Lucky draw: random event each arc",
+        "No enemies by default"
+      ],
+      "restrictions": [
+        "No stipend",
+        "No sensei assigned by default",
+        "No mission board access \u2014 must find commissions narratively"
+      ],
+      "key_npcs": [],
+      "description": "No allegiance. Wander, survive, decide. High freedom, high risk."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "sukuna_vessel": {
+    "finger_roll": {
+      "description": "Fingers consumed at start.",
+      "roll": "random_1_to_20",
+      "buffs_per_finger": {
+        "ce_add": 500
+      }
+    },
+    "soul_dominance": [
+      {
+        "id": "perfect_cage",
+        "name": "Perfect Cage (Yuji Type)",
+        "weight": 70,
+        "control": "player",
+        "special": "Divergent Fist: physical hits create a second CE impact.",
+        "risk": "Sukuna takes control if HP < 5% (biq check vs threshold 6)."
+      },
+      {
+        "id": "coexistence",
+        "name": "Co-Existence (Megumi Type)",
+        "weight": 30,
+        "control": "shared",
+        "special": "Voluntary swap with Sukuna. Instant Malevolent Shrine access.",
+        "risk": "High \u2014 Sukuna may refuse to swap back."
+      }
+    ],
+    "guaranteed_powers": {
+      "ct_id": "shrine",
+      "traits": [
+        "Soul Perception",
+        "Immense CE Output"
+      ],
+      "domain": {
+        "name": "Malevolent Shrine",
+        "type": "open_barrier",
+        "sure_hit": true,
+        "effect": "Slashing sure-hit in 200m radius. Cleave + Dismantle."
+      }
+    },
+    "finger_milestones": [
+      {
+        "fingers": 1,
+        "unlock": "Basic CE Reinforcement"
+      },
+      {
+        "fingers": 5,
+        "unlock": "rct forced to level 1 (Self-Healing)"
+      },
+      {
+        "fingers": 15,
+        "unlock": "Domain Expansion: Malevolent Shrine"
+      },
+      {
+        "fingers": 20,
+        "unlock": "Full King Mode \u2014 Sukuna full stats + near-infinite CE"
+      }
+    ],
+    "extra_ct_slots": 2
+  }
+}

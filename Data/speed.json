@@ -1,0 +1,79 @@
+{
+  "speed": [
+    {
+      "name": "Practically Immobile",
+      "weight": 2,
+      "value": 1
+    },
+    {
+      "name": "Below Average",
+      "weight": 8,
+      "value": 2
+    },
+    {
+      "name": "Average",
+      "weight": 20,
+      "value": 3
+    },
+    {
+      "name": "Above Average",
+      "weight": 18,
+      "value": 4
+    },
+    {
+      "name": "Fast",
+      "weight": 15,
+      "value": 5
+    },
+    {
+      "name": "SubSonic",
+      "weight": 12,
+      "value": 6
+    },
+    {
+      "name": "Transonic",
+      "weight": 8,
+      "value": 7
+    },
+    {
+      "name": "Body Flicker",
+      "weight": 6,
+      "value": 8
+    },
+    {
+      "name": "Lightning-Fast",
+      "weight": 4,
+      "value": 9
+    },
+    {
+      "name": "Hypersonic",
+      "weight": 3,
+      "value": 10
+    },
+    {
+      "name": "Relativistic",
+      "weight": 2,
+      "value": 11
+    },
+    {
+      "name": "Light-Speed",
+      "weight": 1,
+      "value": 12
+    },
+    {
+      "name": "FTL",
+      "weight": 0.6,
+      "value": 13
+    },
+    {
+      "name": "MFTL",
+      "weight": 0.3,
+      "value": 14
+    },
+    {
+      "name": "Instant Teleport",
+      "weight": 0.1,
+      "value": 15
+    }
+  ]
+}

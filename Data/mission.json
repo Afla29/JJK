@@ -1,0 +1,289 @@
+{
+  "mission": {
+    "_note": "Missions are grade-gated. ai_narrator generates specific details (location, enemy name, twist) from these templates. Rewards use canonical grade_id and xp from progression.json.",
+    "categories": [
+      {
+        "id": "exorcism",
+        "name": "Exorcism",
+        "description": "Locate and destroy a cursed spirit haunting a specific area.",
+        "available_grades": [
+          "grade_4",
+          "semi_grade_3",
+          "grade_3",
+          "semi_grade_2",
+          "grade_2",
+          "semi_grade_1",
+          "grade_1",
+          "special_grade"
+        ],
+        "templates": [
+          {
+            "grade_id": "grade_4",
+            "enemy_grade": "grade_4",
+            "base_xp": 200,
+            "base_pay": 150000,
+            "narrative_hooks": [
+              "Elementary school haunting",
+              "Train station curse",
+              "Apartment complex spirit"
+            ]
+          },
+          {
+            "grade_id": "grade_3",
+            "enemy_grade": "grade_3",
+            "base_xp": 400,
+            "base_pay": 400000,
+            "narrative_hooks": [
+              "Hospital corridor curse",
+              "Abandoned shrine",
+              "Mountain pass spirit"
+            ]
+          },
+          {
+            "grade_id": "grade_2",
+            "enemy_grade": "grade_2",
+            "base_xp": 800,
+            "base_pay": 1500000,
+            "narrative_hooks": [
+              "Finger bearer sighting",
+              "Urban district manifestation",
+              "Industrial zone disaster spirit"
+            ]
+          },
+          {
+            "grade_id": "grade_1",
+            "enemy_grade": "semi_special_grade",
+            "base_xp": 1500,
+            "base_pay": 6000000,
+            "narrative_hooks": [
+              "Special Grade awakening threat",
+              "Natural disaster curse",
+              "City-wide manifestation"
+            ]
+          },
+          {
+            "grade_id": "special_grade",
+            "enemy_grade": "special_grade",
+            "base_xp": 3000,
+            "base_pay": 20000000,
+            "narrative_hooks": [
+              "Disaster-class spirit",
+              "Ancient bound spirit breaks seal",
+              "Sukuna finger bearer"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "escort",
+        "name": "Escort / Protection",
+        "description": "Protect a target from cursed spirits or rogue sorcerers during transit or an event.",
+        "available_grades": [
+          "grade_4",
+          "semi_grade_3",
+          "grade_3",
+          "semi_grade_2",
+          "grade_2",
+          "semi_grade_1",
+          "grade_1"
+        ],
+        "templates": [
+          {
+            "grade_id": "grade_4",
+            "threat_grade": "grade_4",
+            "base_xp": 150,
+            "base_pay": 200000,
+            "narrative_hooks": [
+              "Escort a weak sorcerer to hospital",
+              "Guard a non-sorcerer who can see curses"
+            ]
+          },
+          {
+            "grade_id": "grade_2",
+            "threat_grade": "grade_2",
+            "base_xp": 600,
+            "base_pay": 2000000,
+            "narrative_hooks": [
+              "Transport a sealed cursed object",
+              "Guard a clan head during ceremony"
+            ]
+          },
+          {
+            "grade_id": "grade_1",
+            "threat_grade": "grade_1",
+            "base_xp": 1200,
+            "base_pay": 8000000,
+            "narrative_hooks": [
+              "Escort a Special Grade sorcerer who is incapacitated",
+              "Guard a Culling Game observer"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "investigation",
+        "name": "Investigation",
+        "description": "Gather intel on a curse outbreak, rogue sorcerer, or cursed object. Combat may be optional.",
+        "available_grades": [
+          "grade_4",
+          "semi_grade_3",
+          "grade_3",
+          "semi_grade_2",
+          "grade_2"
+        ],
+        "templates": [
+          {
+            "grade_id": "grade_4",
+            "base_xp": 100,
+            "base_pay": 100000,
+            "narrative_hooks": [
+              "Map a low-grade haunt",
+              "Identify a cursed object in a thrift shop"
+            ]
+          },
+          {
+            "grade_id": "grade_3",
+            "base_xp": 250,
+            "base_pay": 450000,
+            "narrative_hooks": [
+              "Track a rogue curse user",
+              "Investigate clan infighting"
+            ]
+          },
+          {
+            "grade_id": "grade_2",
+            "base_xp": 500,
+            "base_pay": 1800000,
+            "narrative_hooks": [
+              "Locate a finger bearer",
+              "Scout a Culling Game colony entry point"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bounty",
+        "name": "Bounty Hunt",
+        "description": "Hunt down a flagged rogue sorcerer. Capture preferred; kill authorized.",
+        "available_grades": [
+          "grade_3",
+          "semi_grade_2",
+          "grade_2",
+          "semi_grade_1",
+          "grade_1",
+          "special_grade"
+        ],
+        "eligible_identities": [
+          "jujutsu_high",
+          "curse_users_association",
+          "independent"
+        ],
+        "templates": [
+          {
+            "grade_id": "grade_3",
+            "target_grade": "grade_3",
+            "base_xp": 500,
+            "base_pay": 800000,
+            "narrative_hooks": [
+              "Track a deserter sorcerer",
+              "Capture a rogue curse user"
+            ]
+          },
+          {
+            "grade_id": "grade_1",
+            "target_grade": "grade_1",
+            "base_xp": 1800,
+            "base_pay": 12000000,
+            "narrative_hooks": [
+              "Eliminate a traitorous Grade 1",
+              "Hunt a Culling Game escapee"
+            ]
+          },
+          {
+            "grade_id": "special_grade",
+            "target_grade": "special_grade",
+            "base_xp": 5000,
+            "base_pay": 50000000,
+            "narrative_hooks": [
+              "Hunt Kenjaku's agent",
+              "Eliminate a rogue Special Grade"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "culling_game",
+        "name": "Culling Game Colony Mission",
+        "description": "Enter or operate inside a Culling Game colony. Kill, survive, add rules.",
+        "available_grades": [
+          "any"
+        ],
+        "eligible_factions": [
+          "culling_game",
+          "independent"
+        ],
+        "mechanics": {
+          "points_per_kill": "5 \u00d7 target grade rank",
+          "add_rule_cost": 100,
+          "exit_colony_cost": 100,
+          "death_risk": "elevated \u2014 permanent death possible"
+        },
+        "templates": [
+          {
+            "base_xp": 1000,
+            "base_pay": 0,
+            "pay_in": "culling_game_points",
+            "narrative_hooks": [
+              "Survive first entry",
+              "Claim territory inside colony",
+              "Challenge a reincarnated sorcerer"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "barrier_task",
+        "name": "Barrier / Curtain Task",
+        "description": "Deploy, reinforce, or take down a barrier around a cursed area.",
+        "available_grades": [
+          "grade_3",
+          "semi_grade_2",
+          "grade_2",
+          "semi_grade_1",
+          "grade_1"
+        ],
+        "templates": [
+          {
+            "grade_id": "grade_3",
+            "base_xp": 200,
+            "base_pay": 350000,
+            "narrative_hooks": [
+              "Erect a curtain over a haunted district",
+              "Collapse an old barrier seal"
+            ]
+          },
+          {
+            "grade_id": "grade_1",
+            "base_xp": 800,
+            "base_pay": 7000000,
+            "narrative_hooks": [
+              "Contain a Special Grade outbreak",
+              "Counter a Kenjaku barrier installation"
+            ]
+          }
+        ]
+      }
+    ],
+    "modifiers": {
+      "solo_completion": "base_xp \u00d7 1.3",
+      "no_collateral_damage": "base_pay \u00d7 1.2",
+      "critical_failure": "base_xp \u00d7 0.2 (lose only \u2014 still get partial XP)",
+      "faction_bonus": {
+        "jujutsu_high": "grade-up approval chance +10% after completion",
+        "curse_users_association": "base_pay \u00d7 1.5",
+        "culling_game": "points awarded in addition to xp",
+        "independent": "random bonus event 20% chance"
+      }
+    }
+  }
+}

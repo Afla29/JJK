@@ -1,0 +1,110 @@
+{
+  "age": [
+    {
+      "range": "5-10",
+      "weight": 4,
+      "value": 1,
+      "buffs": {
+        "exp_mult": 2.0,
+        "strength_add": -2,
+        "durability_add": -2
+      },
+      "description": "Child Prodigy: Weak body, learns at lightning pace."
+    },
+    {
+      "range": "11-15",
+      "weight": 15,
+      "value": 2,
+      "buffs": {
+        "exp_mult": 1.5,
+        "speed_add": 1
+      },
+      "description": "Young Student: Early admission. Highly adaptable."
+    },
+    {
+      "range": "16-20",
+      "weight": 25,
+      "value": 3,
+      "buffs": {
+        "exp_mult": 1.2,
+        "strength_add": 1,
+        "speed_add": 1
+      },
+      "description": "Jujutsu High Age: Peak growth."
+    },
+    {
+      "range": "21-25",
+      "weight": 20,
+      "value": 4,
+      "buffs": {
+        "exp_mult": 1.0,
+        "biq_add": 1
+      },
+      "description": "Young Adult: Balanced. Gaining combat wisdom."
+    },
+    {
+      "range": "26-35",
+      "weight": 15,
+      "value": 5,
+      "buffs": {
+        "exp_mult": 0.9,
+        "biq_add": 2,
+        "ce_efficiency_mult": 1.2
+      },
+      "description": "Established Sorcerer: High efficiency and experience."
+    },
+    {
+      "range": "36-50",
+      "weight": 10,
+      "value": 6,
+      "buffs": {
+        "exp_mult": 0.8,
+        "biq_add": 3,
+        "ce_efficiency_mult": 1.5,
+        "speed_add": -1
+      },
+      "description": "Veteran: Slower, master of energy control."
+    },
+    {
+      "range": "51-80",
+      "weight": 6,
+      "value": 7,
+      "buffs": {
+        "exp_mult": 0.7,
+        "biq_add": 5,
+        "ce_efficiency_mult": 2.0,
+        "strength_add": -2,
+        "speed_add": -2
+      },
+      "description": "Elder: Fragile, immense combat wisdom."
+    },
+    {
+      "range": "81-100",
+      "weight": 3,
+      "value": 8,
+      "buffs": {
+        "exp_mult": 0.6,
+        "biq_add": 7,
+        "ce_efficiency_mult": 3.0,
+        "strength_add": -3,
+        "speed_add": -3,
+        "durability_add": -2
+      },
+      "description": "Living Legend: Near death, ancient efficiency."
+    },
+    {
+      "range": "100+",
+      "weight": 2,
+      "value": 9,
+      "buffs": {
+        "exp_mult": 0.5,
+        "biq_add": 10,
+        "ce_efficiency_mult": 5.0,
+        "strength_add": -5,
+        "speed_add": -5,
+        "durability_add": -5
+      },
+      "description": "True Ancient: Tengen/Kenjaku level."
+    }
+  ]
+}

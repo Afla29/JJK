@@ -1,0 +1,75 @@
+{
+  "ce": {
+    "amounts": [
+      {
+        "name": "Average Human",
+        "weight": 10,
+        "value": 10,
+        "can_use_jujutsu": false
+      },
+      {
+        "name": "Low (Grade 4)",
+        "weight": 20,
+        "value": 50,
+        "can_use_jujutsu": true
+      },
+      {
+        "name": "Standard (Grade 2-3)",
+        "weight": 35,
+        "value": 200,
+        "can_use_jujutsu": true
+      },
+      {
+        "name": "High (Grade 1)",
+        "weight": 20,
+        "value": 500,
+        "can_use_jujutsu": true
+      },
+      {
+        "name": "Massive (Special Grade)",
+        "weight": 10,
+        "value": 1500,
+        "can_use_jujutsu": true
+      },
+      {
+        "name": "Bottomless",
+        "weight": 5,
+        "value": 5000,
+        "can_use_jujutsu": true
+      }
+    ],
+    "efficiency": [
+      {
+        "name": "Messy",
+        "weight": 15,
+        "value": 1,
+        "cost_mult": 2.0
+      },
+      {
+        "name": "Average",
+        "weight": 55,
+        "value": 3,
+        "cost_mult": 1.0
+      },
+      {
+        "name": "Precise",
+        "weight": 20,
+        "value": 5,
+        "cost_mult": 0.5
+      },
+      {
+        "name": "Divine",
+        "weight": 7,
+        "value": 8,
+        "cost_mult": 0.1
+      },
+      {
+        "name": "Six Eyes",
+        "weight": 3,
+        "value": 10,
+        "cost_mult": 0.001
+      }
+    ],
+    "_note": "Final CE cost = ability.ce_cost * efficiency.cost_mult / ce_efficiency_mult_from_buffs"
+  }
+}

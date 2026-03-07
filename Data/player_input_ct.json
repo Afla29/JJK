@@ -1,0 +1,199 @@
+{
+  "player_input_ct": {
+    "_note": "Techniques requiring live player input. AI adjudicates and narrates outcome.",
+    "techniques": [
+      {
+        "ct_id": "comedian",
+        "prompt": "Complete: 'It would be funny if...' \u2014 describe what happens to opponent or battlefield.",
+        "ce_base_cost": 150,
+        "stat_scaling": "iq",
+        "tiers": [
+          {
+            "tier": 0,
+            "label": "Dead Air",
+            "condition": "Not funny, offensive without wit, too short, or just a stat request disguised as a joke.",
+            "effect": {
+              "type": "backlash",
+              "ce_drain_pct": 20,
+              "self_damage": "emotional damage"
+            }
+          },
+          {
+            "tier": 1,
+            "label": "Polite Chuckle",
+            "condition": "Mildly amusing. Light pun or small absurdity.",
+            "effect": {
+              "type": "minor_debuff",
+              "opponent_buffs": {
+                "speed_add": -1
+              },
+              "duration_rounds": 1
+            }
+          },
+          {
+            "tier": 2,
+            "label": "Genuine Laugh",
+            "condition": "Clever wordplay, good subversion, original absurdist logic.",
+            "effect": {
+              "type": "reality_warp",
+              "attack_mult": 1.5,
+              "examples": [
+                "Weapon becomes useless object",
+                "Random hazard appears",
+                "Opponent loses one ability for 2 rounds"
+              ]
+            }
+          },
+          {
+            "tier": 3,
+            "label": "Howling Laughter",
+            "condition": "Creative multi-layered joke with escalation and punchline. Rare.",
+            "effect": {
+              "type": "major_reality_warp",
+              "attack_mult": 3.0,
+              "ce_cost_mult": 0.5,
+              "examples": [
+                "Opponent transformed for 1-2 rounds",
+                "Physics altered",
+                "Instant KO if joke targets enemy nature"
+              ]
+            }
+          },
+          {
+            "tier": 4,
+            "label": "Cosmic Comedy",
+            "condition": "Once per game. Fourth-wall-breaking absurdity of unprecedented depth.",
+            "effect": {
+              "type": "instant_ko",
+              "one_per_game": true,
+              "cooldown_battles": 5
+            }
+          }
+        ],
+        "modifiers": [
+          "Joke specifically about current enemy/situation: +1 tier bonus",
+          "iq value > 3: +5% chance to bump up one tier",
+          "Length alone is not wit \u2014 essays rated Tier 0"
+        ]
+      },
+      {
+        "ct_id": "cursed_speech",
+        "prompt": "Type your command. Be specific. Stronger commands risk backlash.",
+        "ce_base_cost": 100,
+        "stat_scaling": "ct_mastery",
+        "known_commands": [
+          {
+            "cmd": "Don't Move",
+            "effect": "Paralysis 1-2 rounds",
+            "backlash_risk": "low",
+            "power_rating": 1
+          },
+          {
+            "cmd": "Blast Away",
+            "effect": "Target hurled backward",
+            "backlash_risk": "low_medium",
+            "power_rating": 2
+          },
+          {
+            "cmd": "Get Crushed",
+            "effect": "Massive compressive force",
+            "backlash_risk": "medium",
+            "power_rating": 3
+          },
+          {
+            "cmd": "Sleep",
+            "effect": "Instant unconsciousness",
+            "backlash_risk": "low_medium",
+            "power_rating": 1
+          },
+          {
+            "cmd": "Run Away",
+            "effect": "Target flees uncontrollably 1-2 rounds",
+            "backlash_risk": "low",
+            "power_rating": 1
+          },
+          {
+            "cmd": "Explode",
+            "effect": "Internal CE buildup explosion",
+            "backlash_risk": "high",
+            "power_rating": 4
+          },
+          {
+            "cmd": "Die",
+            "effect": "Instant kill attempt",
+            "backlash_risk": "extreme",
+            "power_rating": 5
+          },
+          {
+            "cmd": "Stop",
+            "effect": "All motion halts 1 round",
+            "backlash_risk": "medium",
+            "power_rating": 2
+          },
+          {
+            "cmd": "Break",
+            "effect": "Bones fracture simultaneously",
+            "backlash_risk": "medium_high",
+            "power_rating": 3
+          }
+        ],
+        "custom_commands_allowed": true,
+        "backlash_thresholds": [
+          {
+            "power_rating": 1,
+            "min_ce_to_avoid": 100
+          },
+          {
+            "power_rating": 2,
+            "min_ce_to_avoid": 250
+          },
+          {
+            "power_rating": 3,
+            "min_ce_to_avoid": 500
+          },
+          {
+            "power_rating": 4,
+            "min_ce_to_avoid": 900
+          },
+          {
+            "power_rating": 5,
+            "min_ce_to_avoid": 1500
+          }
+        ],
+        "backlash_severity": [
+          {
+            "level": "minor",
+            "condition": "CE barely meets threshold",
+            "effect": "Sore throat. CE -50. Speed -1 next round."
+          },
+          {
+            "level": "moderate",
+            "condition": "CE is 50-70% of threshold",
+            "effect": "Coughing blood. CE -200. Commands cost double next battle."
+          },
+          {
+            "level": "severe",
+            "condition": "CE below 50% of threshold",
+            "effect": "Throat ruptures. CE -500. Voice unusable 3 battles."
+          },
+          {
+            "level": "catastrophic",
+            "condition": "'Die' with insufficient CE",
+            "effect": "Permanent voice damage. Cursed Speech locked until healing event."
+          }
+        ],
+        "resistance_formula": "chance = (target_ce / player_ce) * (target_biq / 10) * 100%",
+        "immunity": "Target fills ears with CE. Requires target biq >= 5 to know this.",
+        "recorded_command": {
+          "max_active": 1,
+          "ce_cost_mult": 1.5,
+          "note": "Playback still carries CE."
+        },
+        "safe_words": [
+          "Tuna",
+          "Salmon"
+        ]
+      }
+    ]
+  }
+}

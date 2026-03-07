@@ -1,0 +1,74 @@
+{
+  "ct_mastery": [
+    {
+      "name": "Novice",
+      "weight": 40,
+      "value": 1,
+      "ce_cost_mult": 1.5,
+      "damage_mult": 0.8
+    },
+    {
+      "name": "Beginner",
+      "weight": 25,
+      "value": 2,
+      "ce_cost_mult": 1.2,
+      "damage_mult": 1.0
+    },
+    {
+      "name": "Skilled",
+      "weight": 15,
+      "value": 3,
+      "ce_cost_mult": 1.0,
+      "damage_mult": 1.1
+    },
+    {
+      "name": "Experienced",
+      "weight": 10,
+      "value": 4,
+      "ce_cost_mult": 0.9,
+      "damage_mult": 1.2
+    },
+    {
+      "name": "Proficient",
+      "weight": 5,
+      "value": 5,
+      "ce_cost_mult": 0.8,
+      "damage_mult": 1.3
+    },
+    {
+      "name": "Expert",
+      "weight": 3,
+      "value": 6,
+      "ce_cost_mult": 0.7,
+      "damage_mult": 1.4
+    },
+    {
+      "name": "Veteran",
+      "weight": 1.5,
+      "value": 7,
+      "ce_cost_mult": 0.6,
+      "damage_mult": 1.6
+    },
+    {
+      "name": "Master",
+      "weight": 0.8,
+      "value": 8,
+      "ce_cost_mult": 0.5,
+      "damage_mult": 1.8
+    },
+    {
+      "name": "Grandmaster",
+      "weight": 0.4,
+      "value": 9,
+      "ce_cost_mult": 0.4,
+      "damage_mult": 2.0
+    },
+    {
+      "name": "Legendary",
+      "weight": 0.1,
+      "value": 10,
+      "ce_cost_mult": 0.3,
+      "damage_mult": 2.5
+    }
+  ]
+}

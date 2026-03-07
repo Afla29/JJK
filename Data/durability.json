@@ -1,0 +1,64 @@
+{
+  "durability": [
+    {
+      "name": "Paper Thin",
+      "weight": 5,
+      "value": 1
+    },
+    {
+      "name": "Below Average",
+      "weight": 10,
+      "value": 2
+    },
+    {
+      "name": "Average",
+      "weight": 25,
+      "value": 3
+    },
+    {
+      "name": "Tough",
+      "weight": 18,
+      "value": 4
+    },
+    {
+      "name": "Very Tough",
+      "weight": 12,
+      "value": 5
+    },
+    {
+      "name": "Reinforced",
+      "weight": 10,
+      "value": 6
+    },
+    {
+      "name": "Semi-Grade 1",
+      "weight": 7,
+      "value": 7
+    },
+    {
+      "name": "Grade 1 Durability",
+      "weight": 5,
+      "value": 8
+    },
+    {
+      "name": "Semi-Special Grade",
+      "weight": 4,
+      "value": 9
+    },
+    {
+      "name": "Special Grade",
+      "weight": 2.5,
+      "value": 10
+    },
+    {
+      "name": "Unbreakable",
+      "weight": 1,
+      "value": 12
+    },
+    {
+      "name": "Absolute",
+      "weight": 0.5,
+      "value": 15
+    }
+  ]
+}

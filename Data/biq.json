@@ -1,0 +1,39 @@
+{
+  "biq": [
+    {
+      "name": "Reactive",
+      "weight": 15,
+      "value": 1,
+      "counter_chance_pct": 5,
+      "description": "Slow to read battle flow."
+    },
+    {
+      "name": "Average Fighter",
+      "weight": 45,
+      "value": 3,
+      "counter_chance_pct": 12,
+      "description": "Handles standard combat."
+    },
+    {
+      "name": "Tactical Mind",
+      "weight": 25,
+      "value": 6,
+      "counter_chance_pct": 25,
+      "description": "Analyzes opponent mid-fight."
+    },
+    {
+      "name": "Battle Genius",
+      "weight": 10,
+      "value": 8,
+      "counter_chance_pct": 45,
+      "description": "Instinctively knows best move. Todo level."
+    },
+    {
+      "name": "Perfect Adaptor",
+      "weight": 5,
+      "value": 10,
+      "counter_chance_pct": 75,
+      "description": "Sukuna-level adaptation."
+    }
+  ]
+}

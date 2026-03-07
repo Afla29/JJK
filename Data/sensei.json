@@ -1,0 +1,199 @@
+{
+  "sensei": [
+    {
+      "id": "gojo",
+      "name": "Satoru Gojo",
+      "eligible_identities": [
+        "jujutsu_sorcerer",
+        "sukuna_vessel"
+      ],
+      "buffs": {
+        "ce_add": 1000,
+        "ce_efficiency_mult": 1.5,
+        "ct_mastery_add": 2,
+        "iq_add": 1,
+        "domain_mastery_add": 1
+      },
+      "special_teaching": [
+        "CE Visualization: CE flow accuracy up",
+        "Stress Management: resist mental debuffs",
+        "Advanced Barrier: domain mastery grows 50% faster"
+      ]
+    },
+    {
+      "id": "todo",
+      "name": "Aoi Todo",
+      "eligible_identities": [
+        "any"
+      ],
+      "buffs": {
+        "biq_add": 2,
+        "strength_add": 1,
+        "black_flash_mod": 1.3
+      },
+      "special_teaching": [
+        "Brotherhood: all stats +1 when fighting alongside ally",
+        "Schizophrenic Focus: reaction speed up permanently",
+        "Muscle Control: reduce physical technique stamina cost"
+      ]
+    },
+    {
+      "id": "toji",
+      "name": "Toji Fushiguro",
+      "eligible_identities": [
+        "heavenly_restriction",
+        "bounty_hunter",
+        "curse_user"
+      ],
+      "buffs": {
+        "strength_add": 2,
+        "speed_add": 2,
+        "biq_add": 2,
+        "weapon_mastery_add": 2
+      },
+      "special_teaching": [
+        "Zero Presence: undetectable by CE sensing for 1 battle/arc",
+        "Instinctive Combat: no penalty fighting blind",
+        "Sorcerer Killer: +25% damage vs CE users"
+      ]
+    },
+    {
+      "id": "nanami",
+      "name": "Kento Nanami",
+      "eligible_identities": [
+        "any"
+      ],
+      "buffs": {
+        "iq_add": 2,
+        "biq_add": 1,
+        "ce_efficiency_mult": 1.3
+      },
+      "special_teaching": [
+        "Overtime: +1 all combat stats per round after round 3",
+        "Precision Strikes: reveal weak point for +50% damage once/battle",
+        "Efficient Cursing: missed techniques recover 30% CE"
+      ]
+    },
+    {
+      "id": "kusakabe",
+      "name": "Atsuya Kusakabe",
+      "eligible_identities": [
+        "any"
+      ],
+      "buffs": {
+        "biq_add": 2,
+        "weapon_mastery_add": 2,
+        "domain_mastery_add": 2
+      },
+      "special_teaching": [
+        "Ultimate Simple Domain: duration doubled",
+        "Parry King: 20% chance to fully negate physical hits",
+        "Survival Instinct: survive one lethal blow per battle at 1 HP"
+      ]
+    },
+    {
+      "id": "shoko",
+      "name": "Shoko Ieiri",
+      "eligible_identities": [
+        "any"
+      ],
+      "buffs": {
+        "rct_level_add": 2,
+        "iq_add": 1
+      },
+      "special_teaching": [
+        "Anatomical Knowledge: RCT heals 30% more",
+        "Toxin Resistance: immune to poison/bio damage",
+        "Soothe Soul: clear one mental debuff after battle"
+      ]
+    },
+    {
+      "id": "yuta",
+      "name": "Yuta Okkotsu",
+      "eligible_identities": [
+        "any"
+      ],
+      "buffs": {
+        "ce_add": 800,
+        "ct_mastery_add": 2,
+        "rct_level_add": 1
+      },
+      "special_teaching": [
+        "External Storage: hold 2 weapons simultaneously",
+        "Mimicry: 20% chance to copy enemy technique for 1 battle",
+        "Soul Connection: summon power +30%"
+      ]
+    },
+    {
+      "id": "sukuna",
+      "name": "Sukuna",
+      "eligible_identities": [
+        "sukuna_vessel",
+        "reincarnation"
+      ],
+      "buffs": {
+        "ce_add": 2000,
+        "strength_add": 2,
+        "speed_add": 2,
+        "biq_add": 2,
+        "domain_mastery_add": 2
+      },
+      "special_teaching": [
+        "Core of Sorcery: CT damage +40% permanently",
+        "Divine Refinement: use techniques at 0 CE once/battle",
+        "Fear Mongering: enemy defense -20% from round 1"
+      ]
+    },
+    {
+      "id": "kenjaku",
+      "name": "Kenjaku",
+      "eligible_identities": [
+        "reincarnation",
+        "curse_user",
+        "cursed_spirit"
+      ],
+      "buffs": {
+        "iq_add": 3,
+        "ct_mastery_add": 3,
+        "ce_add": 500
+      },
+      "special_teaching": [
+        "Millennium Knowledge: auto-pass knowledge checks",
+        "Barrier Construction: deploy any barrier instantly",
+        "Vessel Adaptation: CE technique compatibility +50%"
+      ]
+    },
+    {
+      "id": "miwa",
+      "name": "Kasumi Miwa",
+      "eligible_identities": [
+        "any"
+      ],
+      "buffs": {
+        "weapon_mastery_add": 2,
+        "iq_add": 1,
+        "luck_add": 1
+      },
+      "special_teaching": [
+        "New Shadow Style: first attack is always a crit",
+        "Humble Heart: +2 luck when at a disadvantage",
+        "Basic Defense: block chance +15%"
+      ]
+    },
+    {
+      "id": "self_taught",
+      "name": "Self-Taught",
+      "eligible_identities": [
+        "any"
+      ],
+      "buffs": {
+        "luck_add": 1
+      },
+      "special_teaching": [
+        "Trial & Error: +50% XP from losses",
+        "Unique Evolution: unlock custom passive at level 5",
+        "Unpredictable Growth: random +2 to a stat per level-up"
+      ]
+    }
+  ]
+}

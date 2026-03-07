@@ -1,0 +1,53 @@
+{
+  "death_painting": [
+    {
+      "id": "choso_type",
+      "name": "Choso Type",
+      "weight": 10,
+      "guaranteed_ct": "blood_manipulation",
+      "buffs": {
+        "ce_add": 1500,
+        "biq_add": 2,
+        "durability_add": 3
+      },
+      "special_traits": [
+        "Blood Conversion: spend CE instead of blood",
+        "Poisonous Blood: lethal on contact",
+        "Brotherly Instinct: biq +3 with allies"
+      ],
+      "description": "Perfect human-curse balance."
+    },
+    {
+      "id": "eso_type",
+      "name": "Eso Type",
+      "weight": 30,
+      "guaranteed_ct": "rot_technique_wing_king",
+      "buffs": {
+        "ce_add": 800,
+        "speed_add": 4,
+        "strength_add": 1
+      },
+      "special_traits": [
+        "Corrosive Blood: melts targets",
+        "Cursed Wings: flight + speed_add +2 airborne"
+      ],
+      "description": "Flamboyant hybrid. Mid-range rot attacks."
+    },
+    {
+      "id": "kechizu_type",
+      "name": "Kechizu Type",
+      "weight": 60,
+      "guaranteed_ct": "rot_technique_decay",
+      "buffs": {
+        "ce_add": 500,
+        "strength_add": 3,
+        "durability_add": 4
+      },
+      "special_traits": [
+        "Acid Spit: ranged rot attack",
+        "Resilient Hide: durability_add +2 at creation"
+      ],
+      "description": "More curse than human. Raw and toxic."
+    }
+  ]
+}

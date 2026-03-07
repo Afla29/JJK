@@ -1,0 +1,57 @@
+{
+  "ct_quantity": {
+    "rolls": [
+      {
+        "amount": 0,
+        "weight": 15,
+        "buffs": {
+          "strength_add": 2,
+          "weapon_mastery_add": 3
+        },
+        "description": "No Innate Technique. Path: Heavenly Restriction or Cursed Tool specialist."
+      },
+      {
+        "amount": 1,
+        "weight": 70,
+        "buffs": {
+          "ct_mastery_add": 1
+        },
+        "description": "Standard. One technique defines your path."
+      },
+      {
+        "amount": 2,
+        "weight": 10,
+        "buffs": {
+          "iq_add": 2,
+          "ce_add": 500
+        },
+        "description": "Genius/Hybrid. Two techniques (like Yuta)."
+      },
+      {
+        "amount": 3,
+        "weight": 4,
+        "buffs": {
+          "iq_add": 3,
+          "ce_add": 1000,
+          "biq_add": 2
+        },
+        "description": "Anomaly. Three techniques."
+      },
+      {
+        "amount": 4,
+        "weight": 1,
+        "buffs": {
+          "iq_add": 5,
+          "ce_add": 2000,
+          "biq_add": 3
+        },
+        "description": "The Limit. Kenjaku-level. Four techniques."
+      }
+    ],
+    "modifiers": {
+      "sukuna_vessel": "Roll result +1 (max 4)",
+      "reincarnation": "Minimum result is 1",
+      "heavenly_restriction_physical": "Forced to 0"
+    }
+  }
+}

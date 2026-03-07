@@ -1,0 +1,391 @@
+{
+  "events": {
+    "_note": "Events are triggered by identity, story flag, or random roll. Each has a trigger, resolution_type, and outcomes. The AI narrator drives all narrative. Stat checks use character's current stat values.",
+    "resolution_types": {
+      "stat_check": "Compare stat vs threshold. Pass/fail each branch differently.",
+      "player_choice": "Present options. Player picks. Outcomes branch.",
+      "player_input": "Player types free text (used by comedian, cursed_speech).",
+      "auto": "Resolves automatically based on current stats. No input needed."
+    },
+    "identity_events": {
+      "sukuna_vessel": [
+        {
+          "id": "find_sukuna_finger",
+          "name": "Sukuna's Finger Discovery",
+          "trigger": "Random during exploration. Frequency scales with luck.",
+          "resolution_type": "player_choice",
+          "choices": [
+            {
+              "option": "Consume it",
+              "stat_check": {
+                "stat": "durability",
+                "threshold": 5,
+                "on_pass": {
+                  "buffs": {
+                    "ce_add": 500,
+                    "strength_add": 1,
+                    "speed_add": 1
+                  },
+                  "finger_count_add": 1
+                },
+                "on_fail": {
+                  "buffs": {
+                    "ce_add": 500,
+                    "durability_add": -1
+                  },
+                  "finger_count_add": 1,
+                  "temp_debuff": {
+                    "name": "Vessel Strain",
+                    "duration_battles": 3,
+                    "effect": "All stats -1"
+                  }
+                }
+              }
+            },
+            {
+              "option": "Store it",
+              "outcome": {
+                "finger_stored_add": 1
+              }
+            },
+            {
+              "option": "Destroy it",
+              "stat_check": {
+                "stat": "ce_add",
+                "threshold": 1000,
+                "on_pass": {
+                  "buffs": {
+                    "biq_add": 1,
+                    "ce_add": -300
+                  }
+                },
+                "on_fail": {
+                  "buffs": {
+                    "ce_add": -300
+                  }
+                }
+              }
+            }
+          ],
+          "finger_milestones": [
+            {
+              "fingers": 5,
+              "unlock": "rct_level forced to 1 (Self-Healing)"
+            },
+            {
+              "fingers": 10,
+              "unlock": "Shrine: Dismantle ability"
+            },
+            {
+              "fingers": 15,
+              "unlock": "Domain Expansion: Malevolent Shrine"
+            },
+            {
+              "fingers": 20,
+              "unlock": "Full King Mode"
+            }
+          ]
+        },
+        {
+          "id": "sukuna_takes_control",
+          "name": "Sukuna Seizes the Body",
+          "trigger": "HP < 10% OR fingers_consumed >= 15.",
+          "resolution_type": "stat_check",
+          "stat_check": {
+            "stat": "biq",
+            "threshold": 6,
+            "on_pass": {
+              "narrative": "You claw back control. Sukuna heals the body as a taunt."
+            },
+            "on_fail": {
+              "narrative": "Sukuna takes over for 1 full battle. Player wakes up surrounded by carnage."
+            }
+          }
+        }
+      ],
+      "ten_shadows": [
+        {
+          "id": "tame_mahoraga",
+          "name": "Summoning Mahoraga",
+          "trigger": "ct_mastery >= 6 (Expert) with ten_shadows.",
+          "resolution_type": "staged",
+          "warning": "Failure does NOT kill \u2014 Mahoraga runs free until re-challenged (5 battle cooldown).",
+          "stages": [
+            {
+              "stage": 1,
+              "name": "The Ritual",
+              "type": "auto",
+              "description": "You draw the summoning seal."
+            },
+            {
+              "stage": 2,
+              "name": "First Clash",
+              "type": "stat_check",
+              "stat_check": {
+                "stat": "biq",
+                "threshold": 7,
+                "on_pass": "Survive. Mahoraga adapts to your first technique.",
+                "on_fail": "Mahoraga breaks free. Retry after 5 battles."
+              }
+            },
+            {
+              "stage": 3,
+              "name": "Adaptation Crisis",
+              "type": "player_choice",
+              "choices": [
+                {
+                  "option": "Switch to different technique/weapon",
+                  "hint": "Resets adaptation. High success if ct_mastery >= 7."
+                },
+                {
+                  "option": "Overwhelm with raw CE",
+                  "stat_check": {
+                    "stat": "ce_add",
+                    "threshold": 3000
+                  }
+                },
+                {
+                  "option": "Use Chimera Shadow Garden",
+                  "requirement": "Domain Expansion must be available."
+                }
+              ]
+            },
+            {
+              "stage": 4,
+              "name": "Taming",
+              "type": "auto",
+              "condition": "Survive all 3 stages",
+              "on_success": {
+                "buffs": {
+                  "ct_mastery_add": 1,
+                  "biq_add": 2
+                },
+                "unlock": "Mahoraga: Tamed \u2014 full control + Adaptive Phenomenon"
+              }
+            }
+          ]
+        }
+      ],
+      "heavenly_restriction": [
+        {
+          "id": "ce_temptation",
+          "name": "The Temptation of CE",
+          "trigger": "Random. Once per game. Physical Gifted type only.",
+          "resolution_type": "player_choice",
+          "choices": [
+            {
+              "option": "Accept",
+              "outcome": {
+                "buffs": {
+                  "ce_add": 200,
+                  "strength_add": -4,
+                  "speed_add": -4
+                },
+                "note": "Heavenly Restriction permanently weakened."
+              }
+            },
+            {
+              "option": "Refuse",
+              "outcome": {
+                "buffs": {
+                  "strength_add": 2,
+                  "speed_add": 2
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "reincarnation": [
+        {
+          "id": "memory_resurgence",
+          "name": "Past Life Memories",
+          "trigger": "After any major battle or near-death event.",
+          "resolution_type": "auto",
+          "outcome": {
+            "buffs": {
+              "ct_mastery_add": 1,
+              "biq_add": 1
+            },
+            "narrative": "Your hands move with muscle memory that isn't yours."
+          }
+        }
+      ]
+    },
+    "universal_events": [
+      {
+        "id": "sensei_training",
+        "name": "Training Session",
+        "trigger": "Once per story arc if sensei is assigned.",
+        "resolution_type": "player_choice",
+        "choices": [
+          {
+            "option": "CE control",
+            "reward": {
+              "ct_mastery_add": 1,
+              "ce_efficiency_mult": 1.1
+            }
+          },
+          {
+            "option": "Physical conditioning",
+            "reward": {
+              "strength_add": 1,
+              "speed_add": 1,
+              "durability_add": 1
+            }
+          },
+          {
+            "option": "Domain techniques",
+            "reward": {
+              "domain_mastery_add": 2
+            },
+            "requires": "domain_expansion exists OR ct_mastery >= 5"
+          },
+          {
+            "option": "Spar with sensei",
+            "stat_check": {
+              "stat": "biq",
+              "threshold": 5,
+              "on_pass": {
+                "buffs": {
+                  "biq_add": 2
+                }
+              },
+              "on_fail": {
+                "buffs": {
+                  "biq_add": 1
+                },
+                "narrative": "You were destroyed. But you learned something."
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "cursed_spirit_encounter",
+        "name": "Cursed Spirit Encounter",
+        "trigger": "Random combat event. Grade scales with player CE.",
+        "resolution_type": "combat",
+        "grade_scaling": [
+          {
+            "condition": "ce_add < 200",
+            "enemy_grade": "grade_4",
+            "base_xp": 50
+          },
+          {
+            "condition": "ce_add 200-500",
+            "enemy_grade": "grade_3",
+            "base_xp": 150
+          },
+          {
+            "condition": "ce_add 500-1500",
+            "enemy_grade": "grade_2",
+            "base_xp": 350
+          },
+          {
+            "condition": "ce_add 1500-3000",
+            "enemy_grade": "grade_1",
+            "base_xp": 700
+          },
+          {
+            "condition": "ce_add > 3000",
+            "enemy_grade": "special_grade",
+            "base_xp": 2000
+          }
+        ]
+      },
+      {
+        "id": "black_flash",
+        "name": "Black Flash",
+        "trigger": "Chance per attack. Probability = luck.black_flash_mod \u00d7 trait.black_flash_mod.",
+        "resolution_type": "auto",
+        "effect": {
+          "attack_mult": 2.5,
+          "zone_trigger_chance_pct": 30,
+          "zone_effect": "Next 3 attacks +50% damage and black_flash_mod \u00d72."
+        }
+      },
+      {
+        "id": "cursed_tool_discovery",
+        "name": "Cursed Tool Discovery",
+        "trigger": "Exploration or defeating a powerful enemy.",
+        "resolution_type": "auto",
+        "roll_from": "weapon.json special pool",
+        "note": "Player may equip, store, or sell the weapon."
+      },
+      {
+        "id": "domain_clash",
+        "name": "Domain Clash",
+        "trigger": "Both player and enemy deploy Domain Expansion simultaneously.",
+        "resolution_type": "stat_check",
+        "formula": "domain_mastery + (ct_mastery \u00d7 0.5) vs enemy equivalent",
+        "outcomes": "See domain_expansion.json clash section."
+      },
+      {
+        "id": "near_death_awakening",
+        "name": "Near-Death Awakening",
+        "trigger": "HP drops below 5% for the first time ever.",
+        "resolution_type": "auto",
+        "one_time": true,
+        "outcome": {
+          "buffs": {
+            "ce_add": 500,
+            "biq_add": 1
+          },
+          "rct_unlock_chance_pct": 30,
+          "narrative": "You shouldn't be alive. But here you are. And something has changed."
+        }
+      },
+      {
+        "id": "faction_encounter",
+        "name": "Faction Contact",
+        "trigger": "Random, more frequent near faction territory.",
+        "resolution_type": "player_choice",
+        "choices": [
+          {
+            "option": "Accept their offer",
+            "outcome": "Join or deepen ties with the faction. Access faction perks from faction.json."
+          },
+          {
+            "option": "Reject",
+            "outcome": "Neutral. May become enemy if faction is hostile."
+          },
+          {
+            "option": "Extract intel then leave",
+            "stat_check": {
+              "stat": "iq",
+              "threshold": 5,
+              "on_pass": {
+                "narrative": "You take what you need and disappear cleanly."
+              },
+              "on_fail": {
+                "narrative": "They notice. You've made an enemy."
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "npc_encounter",
+        "name": "Named Sorcerer Encounter",
+        "trigger": "Rare. Scales with grade and faction alignment.",
+        "resolution_type": "player_choice",
+        "note": "AI selects NPC from npc.json based on player faction, grade, and current arc.",
+        "choices": [
+          {
+            "option": "Challenge them",
+            "outcome": "Combat. Win \u2192 massive XP. Lose \u2192 near-death or retreat."
+          },
+          {
+            "option": "Talk",
+            "outcome": "Possible alliance, intel, or sensei offer."
+          },
+          {
+            "option": "Observe and leave",
+            "outcome": "No consequence. Small biq gain from analysis."
+          }
+        ]
+      }
+    ]
+  }
+}
