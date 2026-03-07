@@ -1,0 +1,24 @@
+{
+  "id": "miwas_katana",
+  "name": "Miwa's Katana",
+  "type": "Katana",
+  "rarity": "common",
+  "weight": 20,
+  "requirements": {
+    "min_ce_add": 0,
+    "min_strength_value": 0,
+    "note": null
+  },
+  "abilities": [
+    {
+      "name": "Simple Domain Quickdraw",
+      "category": "utility",
+      "description": "Optimized for rapid strikes inside Simple Domain.",
+      "mechanics": {
+        "damage_type": "Physical",
+        "ce_cost_mult": 0.8,
+        "special_effect": "Bonus speed and precision in anti-domain scenarios."
+      }
+    }
+  ]
+}
